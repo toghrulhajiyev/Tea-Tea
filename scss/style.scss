@@ -1,1 +1,164 @@
-// font-family: 'Poppins', sans-serif;
+@import "variables";
+@import "shared";
+
+// Common Styling
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+// Utlity Classes
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+// Header Styling
+#header {
+    box-shadow: 0 1px 5px 1px #ddd;
+
+    // Language_Currency
+    .language-currency {
+        padding: 1em;
+        text-align: right;
+        font-size: 0.7em;
+
+        .refund {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-right: 2em;
+        }
+
+        .dropdown {
+
+            .divider {
+                color: $muted-color;
+                padding: 0 .2em;
+            }
+
+            .dropdown-menu {
+                position: relative;
+                transform: translate3d(-10em, 1.4em, 0px);
+                border: 1px solid #787878;
+                border-radius: 0;
+                padding: 0;
+                margin-top: 1em;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: -10px;
+                    right: 50px;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 10px 10px 10px;
+                    border-color: transparent transparent #787878 transparent;
+                }
+
+                .sub-header {
+                    background-color: #FAFAFA;
+                    padding: 1em;
+                }
+
+                .dropdown-container {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    margin: .6em 0;
+
+                    .dropdown-item {
+                        padding: 0 2em .6em 1em;
+
+                        &:hover {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Navbar 
+    .logo-navbar {
+        padding: .8em 0;
+
+        .navbar-container {
+
+            .main-nav-container {
+                display: flex;
+
+                // Logo Container
+                .logo-container {
+                    width: 12em;
+                    height: 100%;
+        
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                // Main-menu
+                .main-nav {
+                    display: flex;
+                    align-items: center;
+
+                    .main-nav-item {
+                        position: relative;
+
+                        .main-nav-link {
+                            font-size: 0.8em; 
+                            color: $dark-color;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            margin: 0 1.8em;
+                        }
+                    }
+                }
+            }
+
+            // Right-Menu
+            .right-menu-container {
+
+                .icon-container {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: 1em 0;
+                    align-items: center;
+
+                    li {
+                        margin-left: 2.5em;
+
+                        i {
+                            font-size: 1.5em;
+                        }
+
+                        &:last-child {
+                            position: relative;
+                            
+                            &::after {
+                                content: "0";
+                                position: absolute;
+                                bottom: 15px;
+                                right: -10px;
+                                width: 1.5em;
+                                height: 1.5em;
+                                background-color: $red-color;
+                                color: $white-color;
+                                border-radius: 50%;
+                                text-align: center;
+                            }   
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Main Styling

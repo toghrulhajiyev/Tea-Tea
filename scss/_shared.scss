@@ -1,0 +1,16 @@
+// Links
+a {
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+        color: $dark-color;
+    }
+}
+
+// List
+ul {
+    list-style-type: none;
+    margin: 0;
+}
