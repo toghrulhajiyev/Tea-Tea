@@ -1,0 +1,12 @@
+// Link
+@mixin passLink($color, $bgColor, $borderColor) {
+    display: inline-block;
+    padding: 1.2em 2.1em;
+    color: $color;
+    background-color: $bgColor;
+    border: 1px solid $borderColor;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: all .3s linear;
+}

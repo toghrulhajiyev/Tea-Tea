@@ -1,5 +1,6 @@
 @import "variables";
 @import "shared";
+@import "mixins";
 
 // Common Styling
 * {
@@ -113,7 +114,7 @@ body {
 
                         .main-nav-link {
                             font-size: 0.8em; 
-                            color: $dark-color;
+                            color: $link-color;
                             text-transform: uppercase;
                             font-weight: bold;
                             margin: 0 1.8em;
@@ -162,3 +163,72 @@ body {
 }
 
 // Main Styling
+#main {
+
+    #showcase {
+
+        #showcaseCarousel {
+
+            .carousel-inner {
+                
+                .slider-caption {
+                    display: inline-block;
+                    border-bottom: 1px solid #696D6C;
+                    padding-bottom: 5px;
+                }
+
+                .carousel-item-first {
+
+                    .carousel-caption-first {
+                        margin-bottom: 10em;
+                        text-align: left;
+
+                        .pass-link {
+                            @include passLink($white-color, transparent, $white-color);
+    
+                            &:hover {
+                                color: #000;
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                }
+
+                .carousel-item-second {
+
+                    .carousel-caption-second {
+                        margin-bottom: 10em;
+                        text-align: center;
+
+                        .pass-link {
+                            @include passLink($white-color, $main-color, $main-color);
+    
+                            &:hover {
+                                color: #000;
+                                background-color: #fff;
+                                border-color: #fff;
+                            }
+                        }
+                    }
+                }
+
+                .carousel-item-third {
+                    .carousel-caption-third {
+                        margin-bottom: 10em;
+                        text-align: right;
+
+                        .pass-link {
+                            @include passLink($white-color, $main-color, $main-color);
+    
+                            &:hover {
+                                color: #000;
+                                background-color: #fff;
+                                border-color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

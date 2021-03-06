@@ -105,3 +105,58 @@ body {
             color: #FFF;
             border-radius: 50%;
             text-align: center; }
+
+#main #showcase #showcaseCarousel .carousel-inner .slider-caption {
+  display: inline-block;
+  border-bottom: 1px solid #696D6C;
+  padding-bottom: 5px; }
+#main #showcase #showcaseCarousel .carousel-inner .carousel-item-first .carousel-caption-first {
+  margin-bottom: 10em;
+  text-align: left; }
+  #main #showcase #showcaseCarousel .carousel-inner .carousel-item-first .carousel-caption-first .pass-link {
+    display: inline-block;
+    padding: 1.2em 2.1em;
+    color: #FFF;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: all .3s linear; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-first .carousel-caption-first .pass-link:hover {
+      color: #000;
+      background-color: #fff; }
+#main #showcase #showcaseCarousel .carousel-inner .carousel-item-second .carousel-caption-second {
+  margin-bottom: 10em;
+  text-align: center; }
+  #main #showcase #showcaseCarousel .carousel-inner .carousel-item-second .carousel-caption-second .pass-link {
+    display: inline-block;
+    padding: 1.2em 2.1em;
+    color: #FFF;
+    background-color: #1DBDB8;
+    border: 1px solid #1DBDB8;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: all .3s linear; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-second .carousel-caption-second .pass-link:hover {
+      color: #000;
+      background-color: #fff;
+      border-color: #fff; }
+#main #showcase #showcaseCarousel .carousel-inner .carousel-item-third .carousel-caption-third {
+  margin-bottom: 10em;
+  text-align: right; }
+  #main #showcase #showcaseCarousel .carousel-inner .carousel-item-third .carousel-caption-third .pass-link {
+    display: inline-block;
+    padding: 1.2em 2.1em;
+    color: #FFF;
+    background-color: #1DBDB8;
+    border: 1px solid #1DBDB8;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: all .3s linear; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-third .carousel-caption-third .pass-link:hover {
+      color: #000;
+      background-color: #fff;
+      border-color: #fff; }
