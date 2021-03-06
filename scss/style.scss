@@ -19,6 +19,11 @@ body {
     margin: 0 auto;
 }
 
+.arrival-container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 // Header Styling
 #header {
     box-shadow: 0 1px 5px 1px #ddd;
@@ -225,6 +230,147 @@ body {
                                 background-color: #fff;
                                 border-color: #fff;
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Arrivals
+    #arrivals {
+        padding: 5em 0;
+
+        .arrival-container {
+
+            .owl-carousel {
+                position: relative;
+                
+                .owl-nav .owl-prev,
+                .owl-nav .owl-next {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translate(0, -50%);
+                    color: $white-color;
+                    transition: all .3s linear;
+
+                    &:hover {
+                        background-color: transparent;
+                        color: $main-color;
+                    }
+                }
+
+                .owl-nav .owl-next {
+                    left: auto;
+                    right: 0;
+                }
+                
+                .arrival {
+                    width: 100%;
+                    height: 100%;
+
+                    .arrival-img {
+                        position: relative;
+
+    
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                            background-color: rgba(0, 0, 0, .4);
+                            opacity: 0;
+                            transition: all .3s linear;
+
+                        }
+                    }   
+
+                    &:hover .arrival-img::after{
+                        opacity: 1;
+                    }
+        
+                    .arrival-content {
+                        position: absolute;
+                        top: 0;
+                        color: #fff;
+                        padding: 30px 70px;
+
+                        .title {
+                            margin-bottom: 1em;
+                        }
+
+                        .content {
+                            margin-bottom: 2.1em;
+                        }
+
+                        .pass-link {
+                            @include passLink($link-color, $white-color, $white-color);
+
+                            &:hover {
+                                @include passLink($white-color, $main-color, $main-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Popular
+    #popular {
+        padding-bottom: 5em;
+        
+        .popular-container {
+            max-width: 100%;
+            display: flex;
+
+            .popular-card {
+
+                .popular-img {
+                    position: relative;
+                    
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, .3);
+                        opacity: 0;
+                        transition: all .3s linear;
+                        
+                    }
+                }
+
+                &:hover .popular-img::after {
+                    opacity: 1;
+                }
+
+                .popular-content {
+                    padding: 2.2em .5em 0 3.7em;
+
+                    .title {
+                        margin-bottom: .7em;
+                    }
+
+                    .content {
+                        color: $grey-color;
+                        line-height: 24px;
+                        font-size: 0.8em;
+                        margin-bottom: 1.8em;
+                    }
+
+                    .pass-link {
+                        @include passLink($dark-color, $white-color, #8e8e8e);;;
+
+                        &:hover {
+                            background-color: $main-color;
+                            color: $white-color;
+                            border-color: $main-color;
                         }
                     }
                 }

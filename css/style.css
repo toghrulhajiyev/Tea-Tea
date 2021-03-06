@@ -9,6 +9,16 @@ ul {
   list-style-type: none;
   margin: 0; }
 
+.section-header {
+  text-align: center;
+  margin-bottom: 1em; }
+
+.section-paragraph {
+  font-size: 0.8em;
+  color: #787878;
+  text-align: center;
+  margin-bottom: 1.5em; }
+
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +29,10 @@ body {
 
 .container {
   max-width: 1440px;
+  margin: 0 auto; }
+
+.arrival-container {
+  max-width: 1140px;
   margin: 0 auto; }
 
 #header {
@@ -160,3 +174,110 @@ body {
       color: #000;
       background-color: #fff;
       border-color: #fff; }
+#main #arrivals {
+  padding: 5em 0; }
+  #main #arrivals .arrival-container .owl-carousel {
+    position: relative; }
+    #main #arrivals .arrival-container .owl-carousel .owl-nav .owl-prev,
+    #main #arrivals .arrival-container .owl-carousel .owl-nav .owl-next {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      color: #FFF;
+      transition: all .3s linear; }
+      #main #arrivals .arrival-container .owl-carousel .owl-nav .owl-prev:hover,
+      #main #arrivals .arrival-container .owl-carousel .owl-nav .owl-next:hover {
+        background-color: transparent;
+        color: #1DBDB8; }
+    #main #arrivals .arrival-container .owl-carousel .owl-nav .owl-next {
+      left: auto;
+      right: 0; }
+    #main #arrivals .arrival-container .owl-carousel .arrival {
+      width: 100%;
+      height: 100%; }
+      #main #arrivals .arrival-container .owl-carousel .arrival .arrival-img {
+        position: relative; }
+        #main #arrivals .arrival-container .owl-carousel .arrival .arrival-img::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.4);
+          opacity: 0;
+          transition: all .3s linear; }
+      #main #arrivals .arrival-container .owl-carousel .arrival:hover .arrival-img::after {
+        opacity: 1; }
+      #main #arrivals .arrival-container .owl-carousel .arrival .arrival-content {
+        position: absolute;
+        top: 0;
+        color: #fff;
+        padding: 30px 70px; }
+        #main #arrivals .arrival-container .owl-carousel .arrival .arrival-content .title {
+          margin-bottom: 1em; }
+        #main #arrivals .arrival-container .owl-carousel .arrival .arrival-content .content {
+          margin-bottom: 2.1em; }
+        #main #arrivals .arrival-container .owl-carousel .arrival .arrival-content .pass-link {
+          display: inline-block;
+          padding: 1.2em 2.1em;
+          color: #1E1E1E;
+          background-color: #FFF;
+          border: 1px solid #FFF;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 0.9em;
+          transition: all .3s linear; }
+          #main #arrivals .arrival-container .owl-carousel .arrival .arrival-content .pass-link:hover {
+            display: inline-block;
+            padding: 1.2em 2.1em;
+            color: #FFF;
+            background-color: #1DBDB8;
+            border: 1px solid #1DBDB8;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: all .3s linear; }
+#main #popular {
+  padding-bottom: 5em; }
+  #main #popular .popular-container {
+    max-width: 100%;
+    display: flex; }
+    #main #popular .popular-container .popular-card .popular-img {
+      position: relative; }
+      #main #popular .popular-container .popular-card .popular-img::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: all .3s linear; }
+    #main #popular .popular-container .popular-card:hover .popular-img::after {
+      opacity: 1; }
+    #main #popular .popular-container .popular-card .popular-content {
+      padding: 2.2em .5em 0 3.7em; }
+      #main #popular .popular-container .popular-card .popular-content .title {
+        margin-bottom: .7em; }
+      #main #popular .popular-container .popular-card .popular-content .content {
+        color: #787878;
+        line-height: 24px;
+        font-size: 0.8em;
+        margin-bottom: 1.8em; }
+      #main #popular .popular-container .popular-card .popular-content .pass-link {
+        display: inline-block;
+        padding: 1.2em 2.1em;
+        color: #1E1E1E;
+        background-color: #FFF;
+        border: 1px solid #8e8e8e;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.9em;
+        transition: all .3s linear; }
+        #main #popular .popular-container .popular-card .popular-content .pass-link:hover {
+          background-color: #1DBDB8;
+          color: #FFF;
+          border-color: #1DBDB8; }
