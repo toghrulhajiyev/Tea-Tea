@@ -568,3 +568,13 @@ body {
       width: 100%; }
   #footer #footer-items .social-media-icons a i {
     padding-right: .2em; }
+#footer .footer-content {
+  padding: 2em 0; }
+  #footer .footer-content .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    #footer .footer-content .footer-container .copyright-container {
+      color: #787878; }
+    #footer .footer-content .footer-container .payment-methods img {
+      padding-right: .4em; }

@@ -777,4 +777,26 @@ body {
             }
         }
     }
+
+    // Footer Content
+    .footer-content {
+        padding: 2em 0;
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .copyright-container {
+                color: $grey-color;
+            }
+
+            .payment-methods {
+
+                img {
+                    padding-right: .4em;
+                }
+            }
+        }
+    }
 }
