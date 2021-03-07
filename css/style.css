@@ -246,7 +246,7 @@ body {
     #main #popular .popular-container .popular-card .popular-img::after {
       content: "";
       position: absolute;
-      bottom: 0;
+      top: 0;
       left: 0;
       width: 100%;
       height: 100%;
@@ -333,7 +333,7 @@ body {
   background-color: #FAFAFA;
   max-width: 100%;
   display: flex;
-  padding-bottom: 5em; }
+  margin-bottom: 5em; }
   #main #quality .quality-heading {
     display: flex;
     flex-direction: column;
@@ -375,3 +375,106 @@ body {
       left: 49%; }
       #main #quality .thumbnail .video i {
         color: #fff; }
+#main #gallery {
+  padding-bottom: 5em; }
+  #main #gallery .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0; }
+    #main #gallery .gallery-container .gallery-img .img {
+      position: relative;
+      width: 353px;
+      height: 100%; }
+      #main #gallery .gallery-container .gallery-img .img::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        transition: all .3s linear; }
+      #main #gallery .gallery-container .gallery-img .img img {
+        width: 100%;
+        height: 100%; }
+      #main #gallery .gallery-container .gallery-img .img .img-layer {
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+        color: #FFF;
+        z-index: 1;
+        opacity: 0;
+        transition: all .3s linear; }
+    #main #gallery .gallery-container .gallery-img:hover .img::after, #main #gallery .gallery-container .gallery-img:hover .img-layer {
+      opacity: 1; }
+  #main #gallery .all-images {
+    text-align: center;
+    margin-top: 2em; }
+    #main #gallery .all-images .pass-link {
+      display: inline-block;
+      padding: 1.2em 2.1em;
+      color: #1E1E1E;
+      background-color: transparent;
+      border: 1px solid #1E1E1E;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.9em;
+      transition: all .3s linear; }
+      #main #gallery .all-images .pass-link:hover {
+        display: inline-block;
+        padding: 1.2em 2.1em;
+        color: #FFF;
+        background-color: #1DBDB8;
+        border: 1px solid #1DBDB8;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.9em;
+        transition: all .3s linear; }
+#main #posts {
+  padding-bottom: 5em; }
+  #main #posts .posts-container .post-card .post-img {
+    position: relative; }
+    #main #posts .posts-container .post-card .post-img::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      transition: all .3s linear; }
+  #main #posts .posts-container .post-card:hover .post-img::after {
+    opacity: 1; }
+  #main #posts .posts-container .post-card .post-content {
+    padding: 2.5em 1em 0 3.75em; }
+    #main #posts .posts-container .post-card .post-content small {
+      display: inline-block;
+      color: #787878;
+      margin-bottom: 1em; }
+    #main #posts .posts-container .post-card .post-content .title {
+      margin-bottom: 1em; }
+    #main #posts .posts-container .post-card .post-content .content {
+      color: #787878;
+      margin-bottom: 1.8em; }
+    #main #posts .posts-container .post-card .post-content .pass-link {
+      display: inline-block;
+      padding: 1.2em 2.1em;
+      color: #1E1E1E;
+      background-color: transparent;
+      border: 1px solid #1E1E1E;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.9em;
+      transition: all .3s linear; }
+      #main #posts .posts-container .post-card .post-content .pass-link:hover {
+        display: inline-block;
+        padding: 1.2em 2.1em;
+        color: #FFF;
+        background-color: #1DBDB8;
+        border: 1px solid #1DBDB8;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.9em;
+        transition: all .3s linear; }

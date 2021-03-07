@@ -33,6 +33,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" />
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+        integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+        crossorigin="anonymous" />
     <!-- Custom Style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -105,10 +109,10 @@
         </div>
 
         <!-- Navbar -->
-            <div class="logo-navbar">
-                <div class="container">
-                    <div class="navbar-container">
-                        <div class="row">
+        <div class="logo-navbar">
+            <div class="container">
+                <div class="navbar-container">
+                    <div class="row">
                         <!-- Logo and Main-nav Container -->
                         <div class="col-lg-9">
                             <div class="main-nav-container">
@@ -305,54 +309,57 @@
                     <h2 class="section-header">Most Popular</h2>
                     <p class="section-paragraph">Pellentesque de fermentum mollis cosmo loremous</p>
                 </div>
-            <div class="popular-container">
-                <div class="row">
+                <div class="popular-container">
+                    <div class="row">
 
-                    <div class="col-md-4">
-                        <div class="popular-card">
-                            <div class="popular-img">
-                                <img class="img-fluid" src="./img/Popular/popular_1.jpg" alt="Oolang Teas">
-                            </div>
-                            <div class="popular-content">
-                                <h3 class="title">Oolang Teas</h3>
-                                <p class="content">Nullam aliquet vestibulum augue non varius, cras nec congue elitos lorem.
-                                    Duis tristique del ante nec aliquam praesent urna tellus.</p>
-                                <a href="#" class="pass-link">Shop Oolang Teas</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4">
-                        <div class="popular-card">
-                            <div class="popular-img">
-                                <img class="img-fluid" src="./img/Popular/popular_2.jpg" alt="Oolang Teas">
-                            </div>
-                            <div class="popular-content">
-                                <h3 class="title">Oolang Teas</h3>
-                                <p class="content">Nullam aliquet vestibulum augue non varius, cras nec congue elitos lorem.
-                                    Duis tristique del ante nec aliquam praesent urna tellus.</p>
-                                <a href="#" class="pass-link">Shop Oolang Teas</a>
+                        <div class="col-md-4">
+                            <div class="popular-card">
+                                <div class="popular-img">
+                                    <img class="img-fluid" src="./img/Popular/popular_1.jpg" alt="Oolang Teas">
+                                </div>
+                                <div class="popular-content">
+                                    <h3 class="title">Oolang Teas</h3>
+                                    <p class="content">Nullam aliquet vestibulum augue non varius, cras nec congue
+                                        elitos lorem.
+                                        Duis tristique del ante nec aliquam praesent urna tellus.</p>
+                                    <a href="#" class="pass-link">Shop Oolang Teas</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="col-md-4">
-                        <div class="popular-card">
-                            <div class="popular-img">
-                                <img class="img-fluid" src="./img/Popular/popular_3.jpg" alt="Oolang Teas">
-                            </div>
-                            <div class="popular-content">
-                                <h3 class="title">Oolang Teas</h3>
-                                <p class="content">Nullam aliquet vestibulum augue non varius, cras nec congue elitos lorem.
-                                    Duis tristique del ante nec aliquam praesent urna tellus.</p>
-                                <a href="#" class="pass-link">Shop Oolang Teas</a>
+
+                        <div class="col-md-4">
+                            <div class="popular-card">
+                                <div class="popular-img">
+                                    <img class="img-fluid" src="./img/Popular/popular_2.jpg" alt="Oolang Teas">
+                                </div>
+                                <div class="popular-content">
+                                    <h3 class="title">Oolang Teas</h3>
+                                    <p class="content">Nullam aliquet vestibulum augue non varius, cras nec congue
+                                        elitos lorem.
+                                        Duis tristique del ante nec aliquam praesent urna tellus.</p>
+                                    <a href="#" class="pass-link">Shop Oolang Teas</a>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="col-md-4">
+                            <div class="popular-card">
+                                <div class="popular-img">
+                                    <img class="img-fluid" src="./img/Popular/popular_3.jpg" alt="Oolang Teas">
+                                </div>
+                                <div class="popular-content">
+                                    <h3 class="title">Oolang Teas</h3>
+                                    <p class="content">Nullam aliquet vestibulum augue non varius, cras nec congue
+                                        elitos lorem.
+                                        Duis tristique del ante nec aliquam praesent urna tellus.</p>
+                                    <a href="#" class="pass-link">Shop Oolang Teas</a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    
                 </div>
-            </div>
-                
+
         </section>
 
         <!-- Products -->
@@ -489,7 +496,8 @@
         <section id="quality">
             <div class="quality-heading">
                 <h2 class="section-header">Excellent quality and taste</h2>
-                <p class="section-paragraph">Destibulum laoreet an risus porta quisque hasellus blandit lacinia neque multrices de loremous</p>
+                <p class="section-paragraph">Destibulum laoreet an risus porta quisque hasellus blandit lacinia neque
+                    multrices de loremous</p>
                 <a href="#" class="pass-link">Discover</a>
             </div>
             <div class="thumbnail">
@@ -503,12 +511,190 @@
                     <div class="modal-dialog" role="video">
                         <div class="modal-content">
                             <div class="modal-body">
-                                <iframe width="100%" height="500" src="https://www.youtube.com/embed/6XZOgg9WRhI?&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe width="100%" height="500"
+                                    src="https://www.youtube.com/embed/6XZOgg9WRhI?&mute=1" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Image Gallery -->
+        <section id="gallery">
+            <div class="container">
+                <div class="gallery-heading">
+                    <h2 class="section-header">Image Gallery</h2>
+                    <p class="section-paragraph">You can change the image gallery block to instagram gallery apps</p>
+                </div>
+                <div class="gallery-container">
+
+                    <div class="gallery-img">
+                        <a href="./img/Gallery/gallery_1.jpg" class="fancybox" data-fancybox="gallery1">
+                            <div class="img">
+                                <img src="./img/Gallery/gallery_1.jpg" alt="Img 1">
+                                <div class="img-layer">
+                                    <i class="fas fa-search-plus"></i> <span
+                                        class="text-uppercase font-weight-bold">Zoom In</span>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="gallery-img">
+                        <a href="./img/Gallery/gallery_2.jpg" class="fancybox" data-fancybox="gallery1">
+                            <div class="img">
+                                <img src="./img/Gallery/gallery_2.jpg" alt="Img 2">
+                                <div class="img-layer">
+                                    <i class="fas fa-search-plus"></i> <span
+                                        class="text-uppercase font-weight-bold">Zoom In</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="gallery-img">
+                        <a href="./img/Gallery/gallery_3.jpg" class="fancybox" data-fancybox="gallery1">
+                            <div class="img">
+                                <img src="./img/Gallery/gallery_3.jpg" alt="Img 3">
+                                <div class="img-layer">
+                                    <i class="fas fa-search-plus"></i> <span
+                                        class="text-uppercase font-weight-bold">Zoom In</span>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="gallery-img">
+                        <a href="./img/Gallery/gallery_4.jpg" class="fancybox" data-fancybox="gallery1">
+                            <div class="img">
+                                <img src="./img/Gallery/gallery_4.jpg" alt="Img 4">
+                                <div class="img-layer">
+                                    <i class="fas fa-search-plus"></i> <span
+                                        class="text-uppercase font-weight-bold">Zoom In</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="gallery-img">
+                        <a href="./img/Gallery/gallery_5.jpg" class="fancybox" data-fancybox="gallery1">
+                            <div class="img">
+                                <img src="./img/Gallery/gallery_5.jpg" alt="Img 5">
+                                <div class="img-layer">
+                                    <i class="fas fa-search-plus"></i> <span
+                                        class="text-uppercase font-weight-bold">Zoom In</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="gallery-img">
+                        <a href="./img/Gallery/gallery_6.jpg" class="fancybox" data-fancybox="gallery1">
+                            <div class="img">
+                                <img src="./img/Gallery/gallery_6.jpg" alt="Img 6">
+                                <div class="img-layer">
+                                    <i class="fas fa-search-plus"></i> <span
+                                        class="text-uppercase font-weight-bold">Zoom In</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="gallery-img">
+                        <a href="./img/Gallery/gallery_7.jpg" class="fancybox" data-fancybox="gallery1">
+                            <div class="img">
+                                <img src="./img/Gallery/gallery_7.jpg" alt="Img 7">
+                                <div class="img-layer">
+                                    <i class="fas fa-search-plus"></i>
+                                    <span class="text-uppercase font-weight-bold">Zoom In</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="gallery-img">
+                        <a href="./img/Gallery/gallery_8.jpg" class="fancybox" data-fancybox="gallery1">
+                            <div class="img">
+                                <img src="./img/Gallery/gallery_8.jpg" alt="Img 8">
+                                <div class="img-layer">
+                                    <i class="fas fa-search-plus"></i> <span
+                                        class="text-uppercase font-weight-bold">Zoom In</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="all-images">
+                    <a href="#" class="pass-link">View All Images</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Posts -->
+        <section id="posts">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="section-header">Recent posts</h2>
+                </div>
+                <div class="posts-container">
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="post-card">
+                                <div class="post-img">
+                                    <img class="img-fluid" src="./img/Post/post_1.jpg" alt="Post 1">
+                                </div>
+                                <div class="post-content">
+                                    <small>by Halo Themes on August 12, 2020</small>
+                                    <h3 class="title">Naminos Lementum An Cosmopolis</h3>
+                                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                                        risus leo cosmo, elementum in malesuada an darius ut au...…</p>
+                                    <a href="#" class="pass-link">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="post-card">
+                                <div class="post-img">
+                                    <img class="img-fluid" src="./img/Post/post_2.jpg" alt="Post 2">
+                                </div>
+                                <div class="post-content">
+                                    <small>by Halo Themes on August 12, 2020</small>
+                                    <h3 class="title">Milancelos Hementum Cosmo Loremous</h3>
+                                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                                        risus leo cosmo, elementum in malesuada an darius ut au...…</p>
+                                    <a href="#" class="pass-link">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="post-card">
+                                <div class="post-img">
+                                    <img class="img-fluid" src="./img/Post/post_3.jpg" alt="Post 3">
+                                </div>
+                                <div class="post-content">
+                                    <small>by Halo Themes on August 12, 2020</small>
+                                    <h3 class="title">Dinterdum Pretium De Condimento</h3>
+                                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                                        risus leo cosmo, elementum in malesuada an darius ut au...…</p>
+                                    <a href="#" class="pass-link">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
         </section>
     </main>
     <!-- Main Ends -->
@@ -538,6 +724,11 @@
     <!-- Slick Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous"></script>
+
+    <!-- Fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
         crossorigin="anonymous"></script>
 
     <!-- My Script -->
