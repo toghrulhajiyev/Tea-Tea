@@ -527,3 +527,44 @@ body {
       #main #services .service .service-content .description {
         color: #787878;
         text-decoration: underline; }
+
+#footer #footer-items {
+  background-color: #F7F9F9;
+  padding: 3em 0; }
+  #footer #footer-items .address {
+    display: flex;
+    flex-direction: column;
+    color: #787878;
+    padding-top: 1em; }
+  #footer #footer-items .contact {
+    display: flex;
+    flex-direction: column;
+    color: #787878;
+    padding-top: 1em; }
+    #footer #footer-items .contact small:last-child a {
+      text-decoration: underline; }
+  #footer #footer-items .footer-heading {
+    margin-bottom: 1.4em;
+    font-size: 1em; }
+  #footer #footer-items .footer-list .footer-list-item {
+    line-height: 2.3;
+    font-size: 0.75em; }
+    #footer #footer-items .footer-list .footer-list-item .footer-list-link {
+      position: relative;
+      color: #787878;
+      transition: all .3s linear; }
+      #footer #footer-items .footer-list .footer-list-item .footer-list-link::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: #787878;
+        transition: all .3s linear; }
+      #footer #footer-items .footer-list .footer-list-item .footer-list-link:hover {
+        color: #1E1E1E; }
+    #footer #footer-items .footer-list .footer-list-item:hover .footer-list-link::after {
+      width: 100%; }
+  #footer #footer-items .social-media-icons a i {
+    padding-right: .2em; }
