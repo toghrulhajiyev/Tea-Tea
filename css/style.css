@@ -478,3 +478,52 @@ body {
         font-weight: bold;
         font-size: 0.9em;
         transition: all .3s linear; }
+#main #subscribe {
+  background-image: url("../img/newsletter_bg.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  padding: 10em 0 15em 0; }
+  #main #subscribe .section-heading {
+    color: #FFF; }
+    #main #subscribe .section-heading .section-header {
+      font-size: 3em; }
+  #main #subscribe .subscription-form #email {
+    padding: .95em 0;
+    background-color: transparent;
+    border: 0;
+    color: #FFF;
+    width: 65%;
+    margin-right: .7em;
+    border-bottom: 2px solid #FFF; }
+    #main #subscribe .subscription-form #email:focus {
+      outline-width: 0; }
+  #main #subscribe .subscription-form .pass-link {
+    display: inline-block;
+    padding: 1.2em 2.1em;
+    color: #FFF;
+    background-color: #1DBDB8;
+    border: 1px solid #1DBDB8;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: all .3s linear; }
+    #main #subscribe .subscription-form .pass-link:hover {
+      display: inline-block;
+      padding: 1.2em 2.1em;
+      color: #FFF;
+      background-color: #117b77;
+      border: 1px solid #117b77;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.9em;
+      transition: all .3s linear; }
+#main #services {
+  padding: 2em 0; }
+  #main #services .service {
+    display: flex; }
+    #main #services .service .service-content {
+      margin-left: 1em; }
+      #main #services .service .service-content .description {
+        color: #787878;
+        text-decoration: underline; }

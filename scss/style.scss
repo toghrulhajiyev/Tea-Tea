@@ -638,4 +638,65 @@ body {
             }
         }
     }
+
+    // Subscribe
+    #subscribe {
+        background-image: url("../img/newsletter_bg.jpg");
+        background-size: cover;
+        background-position: center top;
+        background-attachment: fixed;
+        padding: 10em 0 15em 0;
+
+        .section-heading {
+            color: $white-color;
+
+            .section-header {
+                font-size: 3em;
+            }
+        }
+
+        .subscription-form {
+            
+            #email {
+                padding: .95em 0;
+                background-color: transparent;
+                border: 0;
+                color: $white-color;
+                width: 65%;
+                margin-right: .7em;
+                border-bottom: 2px solid $white-color;
+
+                &:focus {
+                  outline-width: 0;
+
+                }
+            }
+
+            .pass-link {
+                @include passLink($white-color, $main-color, $main-color);
+
+                &:hover {
+                    @include passLink($white-color, #117b77, #117b77);
+                }
+            }
+        }
+    }
+
+    // Services
+    #services {
+        padding: 2em 0;
+
+        .service {
+            display: flex;
+
+            .service-content {
+                margin-left: 1em;
+
+                .description {
+                    color: $grey-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }
