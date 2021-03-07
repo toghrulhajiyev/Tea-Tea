@@ -241,43 +241,137 @@ body {
             transition: all .3s linear; }
 #main #popular {
   padding-bottom: 5em; }
-  #main #popular .popular-container {
-    max-width: 100%;
-    display: flex; }
-    #main #popular .popular-container .popular-card .popular-img {
-      position: relative; }
-      #main #popular .popular-container .popular-card .popular-img::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
+  #main #popular .popular-container .popular-card .popular-img {
+    position: relative; }
+    #main #popular .popular-container .popular-card .popular-img::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      transition: all .3s linear; }
+  #main #popular .popular-container .popular-card:hover .popular-img::after {
+    opacity: 1; }
+  #main #popular .popular-container .popular-card .popular-content {
+    padding: 2.2em .5em 0 3.7em; }
+    #main #popular .popular-container .popular-card .popular-content .title {
+      margin-bottom: .7em; }
+    #main #popular .popular-container .popular-card .popular-content .content {
+      color: #787878;
+      line-height: 24px;
+      font-size: 0.8em;
+      margin-bottom: 1.8em; }
+    #main #popular .popular-container .popular-card .popular-content .pass-link {
+      display: inline-block;
+      padding: 1.2em 2.1em;
+      color: #1E1E1E;
+      background-color: #FFF;
+      border: 1px solid #8e8e8e;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.9em;
+      transition: all .3s linear; }
+      #main #popular .popular-container .popular-card .popular-content .pass-link:hover {
+        background-color: #1DBDB8;
+        color: #FFF;
+        border-color: #1DBDB8; }
+#main #products {
+  padding-bottom: 5em; }
+  #main #products .products-container .product {
+    position: relative; }
+    #main #products .products-container .product .product-img {
+      position: relative;
+      width: 300px;
+      height: 100%; }
+      #main #products .products-container .product .product-img .main-img {
         width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.3);
+        height: 100%; }
+      #main #products .products-container .product .product-img .hover-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
         opacity: 0;
         transition: all .3s linear; }
-    #main #popular .popular-container .popular-card:hover .popular-img::after {
-      opacity: 1; }
-    #main #popular .popular-container .popular-card .popular-content {
-      padding: 2.2em .5em 0 3.7em; }
-      #main #popular .popular-container .popular-card .popular-content .title {
-        margin-bottom: .7em; }
-      #main #popular .popular-container .popular-card .popular-content .content {
-        color: #787878;
-        line-height: 24px;
-        font-size: 0.8em;
-        margin-bottom: 1.8em; }
-      #main #popular .popular-container .popular-card .popular-content .pass-link {
+    #main #products .products-container .product .product-content {
+      margin-top: 1em; }
+      #main #products .products-container .product .product-content .product-header {
+        color: #1E1E1E;
+        font-size: 0.8em; }
+      #main #products .products-container .product .product-content .price-stars {
+        padding-top: 1em; }
+        #main #products .products-container .product .product-content .price-stars .product-stars {
+          opacity: 0;
+          transition: all .3s linear; }
+          #main #products .products-container .product .product-content .price-stars .product-stars i {
+            color: #FFCB23; }
+    #main #products .products-container .product .layer {
+      position: absolute;
+      left: 3.5em;
+      bottom: 7em;
+      opacity: 0;
+      transition: all .3s linear; }
+      #main #products .products-container .product .layer .layer-btn {
+        color: #fff;
         display: inline-block;
         padding: 1.2em 2.1em;
-        color: #1E1E1E;
-        background-color: #FFF;
-        border: 1px solid #8e8e8e;
+        color: #FFF;
+        background-color: #1DBDB8;
+        border: 1px solid #1DBDB8;
         text-transform: uppercase;
         font-weight: bold;
         font-size: 0.9em;
         transition: all .3s linear; }
-        #main #popular .popular-container .popular-card .popular-content .pass-link:hover {
-          background-color: #1DBDB8;
-          color: #FFF;
-          border-color: #1DBDB8; }
+    #main #products .products-container .product:hover .hover-img, #main #products .products-container .product:hover .layer {
+      opacity: 1; }
+    #main #products .products-container .product:hover .product-content .price-stars .product-stars {
+      opacity: 1; }
+#main #quality {
+  background-color: #FAFAFA;
+  max-width: 100%;
+  display: flex;
+  padding-bottom: 5em; }
+  #main #quality .quality-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 8em 15px 8em 45px;
+    align-content: center;
+    width: 50%; }
+    #main #quality .quality-heading .section-header {
+      text-align: left;
+      font-size: 3em;
+      color: #1DBDB8;
+      font-weight: bold; }
+    #main #quality .quality-heading .section-paragraph {
+      text-align: left;
+      margin-bottom: 3.5em; }
+    #main #quality .quality-heading .pass-link {
+      display: inline-block;
+      padding: 1.2em 2.1em;
+      color: #FFF;
+      background-color: #1DBDB8;
+      border: 1px solid #1DBDB8;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.9em;
+      transition: all .3s linear; }
+      #main #quality .quality-heading .pass-link:hover {
+        background-color: #117b77; }
+  #main #quality .thumbnail {
+    position: relative;
+    background-image: url("../img/video-thumbnail.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 62vh; }
+    #main #quality .thumbnail .video {
+      position: absolute;
+      top: 45%;
+      left: 49%; }
+      #main #quality .thumbnail .video i {
+        color: #fff; }
