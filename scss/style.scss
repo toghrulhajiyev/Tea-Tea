@@ -510,7 +510,7 @@ body {
             background-repeat: no-repeat;
             background-size: cover;
             width: 50%;
-            height: 62vh;
+            height: 70vh;
 
             .video {
                 position: absolute;
@@ -712,24 +712,6 @@ body {
     // Contact
     .contact {
         padding: 2em 0;
-        // Breadcrumb Section
-        .breadcrumb-section {
-            margin-bottom: 1em;
-            
-            li {
-                display: inline-block;
-                font-size: .8em;
-                color: $grey-color;
-
-                &:first-child::after {
-                    content: ">";
-                }
-
-                a {
-                    color: $grey-color;
-                }
-            }
-        }
 
         // Contact Us
         .contact-section {
@@ -807,6 +789,119 @@ body {
 
                         .contact-info-item {
                              margin-bottom: 2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Login Section
+#login-main {
+
+    .login {
+        padding: 3em 0;
+
+        .login-section {
+
+            .login-header {
+                margin-bottom: 5em;
+            }
+
+            .login-content {
+
+                .login-form-container {
+                    padding: 4em;
+
+                    .loginHeading {
+                        font-size: 1.1em;
+                        margin-bottom: 1.5em;
+                    }
+
+                    small {
+                        display: inline-block;
+                        color: $grey-color;
+                        margin-bottom: 2em;
+                    }
+
+                    .login-form {
+
+                        label, input {
+                            display: block;
+                        }
+
+                        label {
+                            font-size: .8em;
+                        }
+
+                        input:not(:last-child) {
+                            padding: .8em;
+                            border: 0;
+                            border: 1px solid #c5c5cf;
+                            width: 100%;
+                            margin-bottom: 1em;
+
+                            &:focus {
+                                outline-width: 0;
+                            }
+                        }
+
+                        .pass-link {
+                            @include passLink($white-color, $main-color, $main-color);
+                            margin-bottom: 1.4em;
+
+                            &:hover {
+                                background-color: #117b77;
+                            }
+                        }
+                    }
+
+                    .forgot {
+                        color: $grey-color;
+                        font-size: .8em;
+                    }
+                }
+
+                // Signup Form
+                .signup-form-container {
+                    background-color: #FAFAFA;
+                    padding: 4em;
+                    .signupHeading {
+                        font-size: 1.1em;
+                        margin-bottom: 1.5em;
+                    }
+
+                    small {
+                        color: $grey-color;
+                        margin-bottom: 2em;
+                        
+                    }
+
+                    #signup-form {
+
+                        label, input:not(:last-child) {
+                            display: block;
+                        }
+
+                        label {
+                            font-size: .8em;
+                        }
+
+                        input:not(:last-child) {
+                            padding: .8em;
+                            border: 1px solid #c5c5cf;
+                            width: 100%;
+                            margin-bottom: 1.5em;
+                        }
+
+                        .pass-link {
+                            @include passLink($white-color, $main-color, $main-color);
+                            margin-top: 2em;
+
+                            &:hover {
+                                background-color: #117b77;
+                            }
                         }
                     }
                 }

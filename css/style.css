@@ -19,6 +19,17 @@ ul {
   text-align: center;
   margin-bottom: 1.5em; }
 
+.breadcrumb-section {
+  margin-bottom: 1em; }
+  .breadcrumb-section li {
+    display: inline-block;
+    font-size: .8em;
+    color: #787878; }
+    .breadcrumb-section li:first-child::after {
+      content: ">"; }
+    .breadcrumb-section li a {
+      color: #787878; }
+
 * {
   margin: 0;
   padding: 0;
@@ -372,7 +383,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
-    height: 62vh; }
+    height: 70vh; }
     #main #quality .thumbnail .video {
       position: absolute;
       top: 45%;
@@ -532,16 +543,6 @@ body {
 
 #contact-main .contact {
   padding: 2em 0; }
-  #contact-main .contact .breadcrumb-section {
-    margin-bottom: 1em; }
-    #contact-main .contact .breadcrumb-section li {
-      display: inline-block;
-      font-size: .8em;
-      color: #787878; }
-      #contact-main .contact .breadcrumb-section li:first-child::after {
-        content: ">"; }
-      #contact-main .contact .breadcrumb-section li a {
-        color: #787878; }
   #contact-main .contact .contact-section .contact-header {
     padding-bottom: 4em; }
   #contact-main .contact .contact-section .contact-content .contact-form small {
@@ -596,6 +597,79 @@ body {
     font-size: .7em; }
     #contact-main .contact .contact-section .contact-content .get-in-touch .contact-info .contact-info-item {
       margin-bottom: 2em; }
+
+#login-main .login {
+  padding: 3em 0; }
+  #login-main .login .login-section .login-header {
+    margin-bottom: 5em; }
+  #login-main .login .login-section .login-content .login-form-container {
+    padding: 4em; }
+    #login-main .login .login-section .login-content .login-form-container .loginHeading {
+      font-size: 1.1em;
+      margin-bottom: 1.5em; }
+    #login-main .login .login-section .login-content .login-form-container small {
+      display: inline-block;
+      color: #787878;
+      margin-bottom: 2em; }
+    #login-main .login .login-section .login-content .login-form-container .login-form label, #login-main .login .login-section .login-content .login-form-container .login-form input {
+      display: block; }
+    #login-main .login .login-section .login-content .login-form-container .login-form label {
+      font-size: .8em; }
+    #login-main .login .login-section .login-content .login-form-container .login-form input:not(:last-child) {
+      padding: .8em;
+      border: 0;
+      border: 1px solid #c5c5cf;
+      width: 100%;
+      margin-bottom: 1em; }
+      #login-main .login .login-section .login-content .login-form-container .login-form input:not(:last-child):focus {
+        outline-width: 0; }
+    #login-main .login .login-section .login-content .login-form-container .login-form .pass-link {
+      display: inline-block;
+      padding: 1.2em 2.1em;
+      color: #FFF;
+      background-color: #1DBDB8;
+      border: 1px solid #1DBDB8;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.9em;
+      transition: all .3s linear;
+      margin-bottom: 1.4em; }
+      #login-main .login .login-section .login-content .login-form-container .login-form .pass-link:hover {
+        background-color: #117b77; }
+    #login-main .login .login-section .login-content .login-form-container .forgot {
+      color: #787878;
+      font-size: .8em; }
+  #login-main .login .login-section .login-content .signup-form-container {
+    background-color: #FAFAFA;
+    padding: 4em; }
+    #login-main .login .login-section .login-content .signup-form-container .signupHeading {
+      font-size: 1.1em;
+      margin-bottom: 1.5em; }
+    #login-main .login .login-section .login-content .signup-form-container small {
+      color: #787878;
+      margin-bottom: 2em; }
+    #login-main .login .login-section .login-content .signup-form-container #signup-form label, #login-main .login .login-section .login-content .signup-form-container #signup-form input:not(:last-child) {
+      display: block; }
+    #login-main .login .login-section .login-content .signup-form-container #signup-form label {
+      font-size: .8em; }
+    #login-main .login .login-section .login-content .signup-form-container #signup-form input:not(:last-child) {
+      padding: .8em;
+      border: 1px solid #c5c5cf;
+      width: 100%;
+      margin-bottom: 1.5em; }
+    #login-main .login .login-section .login-content .signup-form-container #signup-form .pass-link {
+      display: inline-block;
+      padding: 1.2em 2.1em;
+      color: #FFF;
+      background-color: #1DBDB8;
+      border: 1px solid #1DBDB8;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.9em;
+      transition: all .3s linear;
+      margin-top: 2em; }
+      #login-main .login .login-section .login-content .signup-form-container #signup-form .pass-link:hover {
+        background-color: #117b77; }
 
 #footer #footer-items {
   background-color: #F7F9F9;

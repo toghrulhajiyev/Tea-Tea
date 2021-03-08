@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea&Tea | Contact</title>
+    <title>Tea&Tea | Login</title>
     <!-- Animate Style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Bootstrap -->
@@ -189,16 +189,9 @@
     <!-- Header Ends -->
 
     <!-- Main Starts -->
-    <main id="contact-main">
-        <!-- Map -->
-        <section class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.254552899851!2d106.70003205014112!3d10.791805561823436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528b5a9b8da65%3A0x5b54e5d89087b920!2zNCBOZ3V54buFbiDEkMOsbmggQ2hp4buDdSwgxJBhIEthbywgUXXhuq1uIDEsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1615182076257!5m2!1sen!2s"
-                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="contact">
+    <main id="login-main">
+        <!-- Login -->
+        <section class="login">
             <div class="container">
                 <!-- Breadcrumb -->
                 <ul class="breadcrumb-section">
@@ -206,69 +199,64 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#">Contact Us</a>
+                        <a href="#">Account</a>
                     </li>
                 </ul>
-
-                <!-- Contact Us -->
-                <section class="contact-section">
+                <!-- Login Section -->
+                <section class="login-section">
                     <div class="container">
-                        <div class="contact-header">
-                            <h1 class="title">Contact us</h1>
+                        <div class="login-header">
+                            <h1 class="title">My Account</h1>
                         </div>
 
-                        <div class="contact-content">
+                        <div class="login-content">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <!-- Contact Form -->
-                                    <div class="contact-form">
-                                        <small>Have a question or comment? Use the form below to send us <br> a message or contact us by mail at:  <a href="#" class="text-primary">stores@domain.com</a></small>
-                                        <form class="form">
-    
-                                            <label for="name"> Your Name</label>
-                                            <input type="text" class="firstname">
-                                            <div class="invalid-feedback"></div>
-    
-                                            <label for="number"> Phone Number</label>
-                                            <input type="text" class="phone-number">
-                                            <div class="invalid-feedback"></div>
-    
-                                            <label for="mail"> Your Email Address *</label>
-                                            <input type="email" id="mail">
+                                    <div class="login-form-container">
+                                        <h3 class="loginHeading">Returning Customer</h3>
+                                        <small>I am a returning customer</small>
+
+                                        <form class="login-form">
+                                            <label for="mail">Email Address *</label>
+                                            <input type="email" id="login-mail">
                                             <div class="invalid-feedback"></div>
 
-                                            <label for="comments">Your Comments *</label>
-                                            <textarea name="message" id="comments" cols="30" rows="10"></textarea>
+                                            <label for="name">Password*</label>
+                                            <input type="password" class="password">
                                             <div class="invalid-feedback"></div>
-    
-                                            <input type="submit" value="Submit Form" class="pass-link" id="submitBtn">
+
+                                            <input type="submit" value="LOGIN" class="pass-link" id="logInBtn">
                                         </form>
+
+                                        <p class="forgot">
+                                            <a href="#">Forgot Password</a> or <a href="index.html">Return to Store</a>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <!-- Get In Touch -->
-                                    <div class="get-in-touch">
-                                        <h3 class="loginTitle">Please do get in touch!</h3>
-                                        <hr>
-                                        <p class="loginText">We'd love to hear from you. Please use the form to send us your message or ideas. Or simply pop in for a cup of fresh tea and a cookie:</p>
-                                        <a href="#" class="pass-link">Sample Button</a>
+                                    <div class="signup-form-container">
+                                        <h3 class="signupHeading">New Customer</h3>
+                                        <small class="d-block">Register Account</small>
+                                        <small class="d-block">By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</small>
+                                        <form id="signup-form">
+                                            <label for="name"> First Name</label>
+                                            <input type="text" id="firstname">
+                                            <div class="invalid-feedback"></div>
+    
+                                            <label for="lastname">Last Name</label>
+                                            <input type="text" id="lastname">
+                                            <div class="invalid-feedback"></div>
+    
+                                            <label for="mail">Email *</label>
+                                            <input type="email" id="signup-mail">
+                                            <div class="invalid-feedback"></div>
 
-                                        <div class="contact-info">
-                                            <div class="contact-info-item address">
-                                                1669 Ave Dermentum, Onsectetur Adipiscing Tortor <br> Sagittis, CA 880986, United States
-                                            </div>
+                                            <label for="password">Password *</label>
+                                            <input type="password" name="password" id="password">
+                                            <div class="invalid-feedback"></div>
     
-                                            <div class="contact-info-item email">
-                                                Email: stores@domain.com <br>
-                                                Toll-free: 1900 000 TeaTea
-                                            </div>
-    
-                                            <div class="contact-info-item open-hours">
-                                                Opening hours: <br>
-                                                Monday to Saturday: 9am - 10pm <br>
-                                                Sundays: 10am - 6pm
-                                            </div>
-                                        </div>
+                                            <input type="submit" value="Create Account" class="pass-link" id="submitBtn">
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -436,7 +424,7 @@
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous"></script>
     <!-- My Script -->
-    <script src="js/contact.js"></script>
+    <script src="js/login.js"></script>
 </body>
 
 </html>
