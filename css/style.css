@@ -86,6 +86,10 @@ body {
         #header .logo-navbar .navbar-container .main-nav-container .logo-container img {
           width: 100%;
           height: 100%; }
+      #header .logo-navbar .navbar-container .main-nav-container .hamburger {
+        background-color: transparent;
+        border: 0;
+        display: none; }
       #header .logo-navbar .navbar-container .main-nav-container .main-nav {
         display: flex;
         align-items: center; }
@@ -377,13 +381,11 @@ body {
         color: #fff; }
 #main #gallery {
   padding-bottom: 5em; }
-  #main #gallery .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0; }
+  #main #gallery .gallery-container .gallery-img {
+    padding: 1em 0; }
     #main #gallery .gallery-container .gallery-img .img {
       position: relative;
-      width: 353px;
+      width: 100%;
       height: 100%; }
       #main #gallery .gallery-container .gallery-img .img::after {
         content: "";
@@ -578,3 +580,231 @@ body {
       color: #787878; }
     #footer .footer-content .footer-container .payment-methods img {
       padding-right: .4em; }
+
+@media only screen and (max-width: 576px) {
+  #header .language-currency .dropdown .dropdown-menu {
+    position: relative;
+    transform: translate3d(-11em, 1.4em, 0px);
+    border: 1px solid #787878;
+    border-radius: 0;
+    padding: 0;
+    margin-top: 1em; }
+  #header .logo-navbar .navbar-container .main-nav-container {
+    flex-direction: column;
+    text-align: center; }
+    #header .logo-navbar .navbar-container .main-nav-container .logo-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+      #header .logo-navbar .navbar-container .main-nav-container .logo-container img {
+        width: 200px;
+        height: 100%; }
+      #header .logo-navbar .navbar-container .main-nav-container .logo-container .hamburger {
+        display: block;
+        margin-left: auto; }
+    #header .logo-navbar .navbar-container .main-nav-container .main-nav {
+      display: block;
+      flex-direction: column;
+      opacity: 0;
+      height: 0; }
+      #header .logo-navbar .navbar-container .main-nav-container .main-nav .main-nav-item {
+        padding-bottom: 1em; }
+  #header .logo-navbar .navbar-container .right-menu-container .icon-container {
+    justify-content: flex-start; }
+    #header .logo-navbar .navbar-container .right-menu-container .icon-container li {
+      margin: 0 2em 0 0; }
+
+  #main #showcase #showcaseCarousel .carousel-inner .carousel-item-first .carousel-caption-first {
+    margin-bottom: 0; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-first .carousel-caption-first .slider-header {
+      font-size: 1em; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-first .carousel-caption-first .slider-text {
+      display: none; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-first .carousel-caption-first .pass-link {
+      font-size: 10px;
+      padding: .7em 2em; }
+  #main #showcase #showcaseCarousel .carousel-inner .carousel-item-second .carousel-caption-second {
+    margin-bottom: 0; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-second .carousel-caption-second .slider-header {
+      font-size: 1em; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-second .carousel-caption-second .slider-text {
+      display: none; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-second .carousel-caption-second .pass-link {
+      font-size: 10px;
+      padding: .7em 2em; }
+  #main #showcase #showcaseCarousel .carousel-inner .carousel-item-third .carousel-caption-third {
+    margin-bottom: 0; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-third .carousel-caption-third .slider-header {
+      font-size: 1em; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-third .carousel-caption-third .slider-text {
+      display: none; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-third .carousel-caption-third .pass-link {
+      font-size: 0.6em;
+      padding: .7em 2em; }
+  #main #arrivals .arrival-container .owl-carousel .arrival .arrival-content .title {
+    margin-bottom: .6em; }
+  #main #arrivals .arrival-container .owl-carousel .arrival .arrival-content .content {
+    margin-bottom: 1em; }
+  #main #arrivals .arrival-container .owl-carousel .arrival .arrival-content .pass-link {
+    padding: .5em 2em; }
+  #main #popular .popular-container .popular-card {
+    margin-bottom: 2em; }
+    #main #popular .popular-container .popular-card .popular-content {
+      padding: 2em; }
+  #main #quality {
+    flex-direction: column; }
+    #main #quality .quality-heading {
+      width: 100%; }
+    #main #quality .thumbnail {
+      width: 100%; }
+  #main #posts .posts-container .post-card {
+    margin-bottom: 1em; }
+    #main #posts .posts-container .post-card .post-content {
+      padding: 2em; }
+  #main #subscribe .subscription-form .pass-link {
+    margin-top: 1em; } }
+@media only screen and (max-width: 768px) {
+  #header .language-currency .dropdown .dropdown-menu {
+    position: relative;
+    transform: translate3d(-11em, 1.4em, 0px);
+    border: 1px solid #787878;
+    border-radius: 0;
+    padding: 0;
+    margin-top: 1em; }
+  #header .logo-navbar .navbar-container .main-nav-container {
+    flex-direction: column;
+    text-align: center; }
+    #header .logo-navbar .navbar-container .main-nav-container .logo-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+      #header .logo-navbar .navbar-container .main-nav-container .logo-container img {
+        width: 200px;
+        height: 100%; }
+      #header .logo-navbar .navbar-container .main-nav-container .logo-container .hamburger {
+        display: block;
+        margin-left: auto; }
+    #header .logo-navbar .navbar-container .main-nav-container .main-nav {
+      display: block;
+      flex-direction: column;
+      opacity: 0;
+      height: 0; }
+      #header .logo-navbar .navbar-container .main-nav-container .main-nav .main-nav-item {
+        padding-bottom: 1em; }
+  #header .logo-navbar .navbar-container .right-menu-container .icon-container {
+    justify-content: flex-start; }
+    #header .logo-navbar .navbar-container .right-menu-container .icon-container li {
+      margin: 0 2em 0 0; }
+
+  #main #showcase #showcaseCarousel .carousel-inner .carousel-item-first .carousel-caption-first {
+    margin-bottom: 0; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-first .carousel-caption-first .slider-header {
+      font-size: 2em; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-first .carousel-caption-first .pass-link {
+      font-size: 10px;
+      padding: .7em 2em; }
+  #main #showcase #showcaseCarousel .carousel-inner .carousel-item-second .carousel-caption-second {
+    margin-bottom: 0; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-second .carousel-caption-second .slider-header {
+      font-size: 2em; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-second .carousel-caption-second .pass-link {
+      font-size: 10px;
+      padding: .7em 2em; }
+  #main #showcase #showcaseCarousel .carousel-inner .carousel-item-third .carousel-caption-third {
+    margin-bottom: 0; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-third .carousel-caption-third .slider-header {
+      font-size: 2em; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-third .carousel-caption-third .pass-link {
+      font-size: 0.6em;
+      padding: .7em 2em; }
+  #main #arrivals .arrival-container .owl-carousel .arrival .arrival-content .title {
+    margin-bottom: .6em; }
+  #main #arrivals .arrival-container .owl-carousel .arrival .arrival-content .content {
+    margin-bottom: 1em; }
+  #main #arrivals .arrival-container .owl-carousel .arrival .arrival-content .pass-link {
+    padding: .5em 2em; }
+  #main #popular .popular-container .popular-card {
+    margin-bottom: 2em; }
+    #main #popular .popular-container .popular-card .popular-content {
+      padding: 2em; }
+      #main #popular .popular-container .popular-card .popular-content .pass-link {
+        font-size: .7em; }
+  #main #quality {
+    flex-direction: column; }
+    #main #quality .quality-heading {
+      width: 100%; }
+    #main #quality .thumbnail {
+      width: 100%; }
+  #main #posts .posts-container .post-card {
+    margin-bottom: 1em; }
+    #main #posts .posts-container .post-card .post-content {
+      padding: 2em; } }
+@media only screen and (max-width: 1024px) {
+  #header .logo-navbar .navbar-container .main-nav-container {
+    flex-direction: column;
+    text-align: center; }
+    #header .logo-navbar .navbar-container .main-nav-container .logo-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+      #header .logo-navbar .navbar-container .main-nav-container .logo-container img {
+        width: 200px;
+        height: 100%; }
+      #header .logo-navbar .navbar-container .main-nav-container .logo-container .hamburger {
+        display: block;
+        margin-left: auto; }
+    #header .logo-navbar .navbar-container .main-nav-container .main-nav {
+      display: block;
+      flex-direction: column;
+      opacity: 0;
+      height: 0; }
+      #header .logo-navbar .navbar-container .main-nav-container .main-nav .main-nav-item {
+        padding-bottom: 1em; }
+  #header .logo-navbar .navbar-container .right-menu-container .icon-container {
+    justify-content: flex-start; }
+    #header .logo-navbar .navbar-container .right-menu-container .icon-container li {
+      margin: 0 2em 0 0; }
+
+  #main #showcase #showcaseCarousel .carousel-inner .carousel-item-first .carousel-caption-first {
+    margin-bottom: 5em; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-first .carousel-caption-first .slider-header {
+      font-size: 2em; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-first .carousel-caption-first .pass-link {
+      font-size: 10px;
+      padding: 1em 2em; }
+  #main #showcase #showcaseCarousel .carousel-inner .carousel-item-second .carousel-caption-second {
+    margin-bottom: 5em; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-second .carousel-caption-second .slider-header {
+      font-size: 2em; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-second .carousel-caption-second .pass-link {
+      font-size: 10px;
+      padding: 1em 2em; }
+  #main #showcase #showcaseCarousel .carousel-inner .carousel-item-third .carousel-caption-third {
+    margin-bottom: 5em; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-third .carousel-caption-third .slider-header {
+      font-size: 2em; }
+    #main #showcase #showcaseCarousel .carousel-inner .carousel-item-third .carousel-caption-third .pass-link {
+      font-size: 0.6em;
+      padding: 1em 2em; }
+  #main #arrivals .arrival-container .owl-carousel .arrival .arrival-content .title {
+    margin-bottom: .6em; }
+  #main #arrivals .arrival-container .owl-carousel .arrival .arrival-content .content {
+    margin-bottom: 1em; }
+  #main #arrivals .arrival-container .owl-carousel .arrival .arrival-content .pass-link {
+    padding: .5em 2em; }
+  #main #popular .popular-container .popular-card {
+    margin-bottom: 2em; }
+    #main #popular .popular-container .popular-card .popular-content {
+      padding: 2em; }
+      #main #popular .popular-container .popular-card .popular-content .pass-link {
+        font-size: .7em; }
+  #main #quality {
+    flex-direction: column; }
+    #main #quality .quality-heading {
+      width: 100%; }
+    #main #quality .thumbnail {
+      width: 100%; }
+  #main #posts .posts-container .post-card {
+    margin-bottom: 1em; }
+    #main #posts .posts-container .post-card .post-content {
+      padding: 2em; } }
