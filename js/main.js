@@ -85,3 +85,4 @@ $('.products-container').slick({
   });
 
 });
+

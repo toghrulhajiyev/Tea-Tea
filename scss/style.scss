@@ -704,6 +704,117 @@ body {
     }
 }
 
+
+
+// Contact Page
+#contact-main {
+
+    // Contact
+    .contact {
+        padding: 2em 0;
+        // Breadcrumb Section
+        .breadcrumb-section {
+            margin-bottom: 1em;
+            
+            li {
+                display: inline-block;
+                font-size: .8em;
+                color: $grey-color;
+
+                &:first-child::after {
+                    content: ">";
+                }
+
+                a {
+                    color: $grey-color;
+                }
+            }
+        }
+
+        // Contact Us
+        .contact-section {
+
+            .contact-header {
+                padding-bottom: 4em;
+            }
+
+            .contact-content {
+
+                // Contact Form
+                .contact-form {
+
+                    small {
+                        display: inline-block;
+                        color: $grey-color;
+                        padding-bottom: 2em;
+                    }
+
+                    .form {
+                        
+                        label, input:not(:last-child), textarea {
+                            display: block;
+                            width: 100%;
+                        }
+
+                        label {
+                            color: $dark-color;
+                            font-size: .8em;
+                        }
+
+                        input, textarea {
+                            border: 1px solid $grey-color;
+                            margin-bottom: 1.5em;
+                            padding: .8em;
+                            color: $grey-color;
+                            font-size: .8em;
+
+                            &:focus {
+                                outline-width: 0;
+                            }
+                        }
+
+                        .pass-link {
+                            @include passLink($white-color, $main-color, $main-color);
+                            
+                            &:hover {
+                                background-color: #117b77;
+                            }
+                        }
+                    }
+                }
+
+                // Get In Touch
+                .get-in-touch {
+
+                    .loginTitle {
+                        font-size: 1.1em;
+                    }
+
+                    .loginText {
+                        font-size: .8em;
+                        color: $grey-color;
+                        margin-bottom: 2.5em;
+                    }
+                    
+                    .pass-link {
+                        @include passLink($dark-color, transparent, $dark-color);
+                        margin-bottom: 2.5em;
+                    }
+
+                    .contact-info {
+                        color: $grey-color;
+                        font-size: .7em;
+
+                        .contact-info-item {
+                             margin-bottom: 2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 // Footer
 #footer {
 
@@ -817,7 +928,7 @@ body {
 
             .dropdown-menu {
                 position: relative;
-                transform: translate3d(-11em, 1.4em, 0px);
+                transform: translate3d(-12em, 1.4em, 0px);
                 border: 1px solid #787878;
                 border-radius: 0;
                 padding: 0;
@@ -895,7 +1006,7 @@ body {
                             margin-bottom: 0;
 
                             .slider-header {
-                                font-size: 1em;
+                                font-size: .6em;
                             }
 
                             .slider-text {
@@ -915,7 +1026,7 @@ body {
                             margin-bottom: 0;
 
                             .slider-header {
-                                font-size: 1em;
+                                font-size: .6em;
                             }
 
                             .slider-text {
@@ -935,7 +1046,7 @@ body {
                             margin-bottom: 0;
 
                             .slider-header {
-                                font-size: 1em;
+                                font-size: .6em;
                             }
 
                             .slider-text {
@@ -1035,10 +1146,21 @@ body {
             }
         }
     }
+
+    // Footer
+    #footer {
+
+        #footer-items {
+
+            .footer-heading {
+                margin-top: 1em;
+            }
+        }
+    }
 }
 
 // Medium Screens
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 768px) {
     // Header
     #header {
 
@@ -1049,7 +1171,7 @@ body {
 
             .dropdown-menu {
                 position: relative;
-                transform: translate3d(-11em, 1.4em, 0px);
+                transform: translate3d(-12em, 1.4em, 0px);
                 border: 1px solid #787878;
                 border-radius: 0;
                 padding: 0;
@@ -1250,7 +1372,7 @@ body {
 } 
 
 // Large Screen
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
     // Header
     #header {
 

@@ -530,6 +530,73 @@ body {
         color: #787878;
         text-decoration: underline; }
 
+#contact-main .contact {
+  padding: 2em 0; }
+  #contact-main .contact .breadcrumb-section {
+    margin-bottom: 1em; }
+    #contact-main .contact .breadcrumb-section li {
+      display: inline-block;
+      font-size: .8em;
+      color: #787878; }
+      #contact-main .contact .breadcrumb-section li:first-child::after {
+        content: ">"; }
+      #contact-main .contact .breadcrumb-section li a {
+        color: #787878; }
+  #contact-main .contact .contact-section .contact-header {
+    padding-bottom: 4em; }
+  #contact-main .contact .contact-section .contact-content .contact-form small {
+    display: inline-block;
+    color: #787878;
+    padding-bottom: 2em; }
+  #contact-main .contact .contact-section .contact-content .contact-form .form label, #contact-main .contact .contact-section .contact-content .contact-form .form input:not(:last-child), #contact-main .contact .contact-section .contact-content .contact-form .form textarea {
+    display: block;
+    width: 100%; }
+  #contact-main .contact .contact-section .contact-content .contact-form .form label {
+    color: #1E1E1E;
+    font-size: .8em; }
+  #contact-main .contact .contact-section .contact-content .contact-form .form input, #contact-main .contact .contact-section .contact-content .contact-form .form textarea {
+    border: 1px solid #787878;
+    margin-bottom: 1.5em;
+    padding: .8em;
+    color: #787878;
+    font-size: .8em; }
+    #contact-main .contact .contact-section .contact-content .contact-form .form input:focus, #contact-main .contact .contact-section .contact-content .contact-form .form textarea:focus {
+      outline-width: 0; }
+  #contact-main .contact .contact-section .contact-content .contact-form .form .pass-link {
+    display: inline-block;
+    padding: 1.2em 2.1em;
+    color: #FFF;
+    background-color: #1DBDB8;
+    border: 1px solid #1DBDB8;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: all .3s linear; }
+    #contact-main .contact .contact-section .contact-content .contact-form .form .pass-link:hover {
+      background-color: #117b77; }
+  #contact-main .contact .contact-section .contact-content .get-in-touch .loginTitle {
+    font-size: 1.1em; }
+  #contact-main .contact .contact-section .contact-content .get-in-touch .loginText {
+    font-size: .8em;
+    color: #787878;
+    margin-bottom: 2.5em; }
+  #contact-main .contact .contact-section .contact-content .get-in-touch .pass-link {
+    display: inline-block;
+    padding: 1.2em 2.1em;
+    color: #1E1E1E;
+    background-color: transparent;
+    border: 1px solid #1E1E1E;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: all .3s linear;
+    margin-bottom: 2.5em; }
+  #contact-main .contact .contact-section .contact-content .get-in-touch .contact-info {
+    color: #787878;
+    font-size: .7em; }
+    #contact-main .contact .contact-section .contact-content .get-in-touch .contact-info .contact-info-item {
+      margin-bottom: 2em; }
+
 #footer #footer-items {
   background-color: #F7F9F9;
   padding: 3em 0; }
@@ -584,7 +651,7 @@ body {
 @media only screen and (max-width: 576px) {
   #header .language-currency .dropdown .dropdown-menu {
     position: relative;
-    transform: translate3d(-11em, 1.4em, 0px);
+    transform: translate3d(-12em, 1.4em, 0px);
     border: 1px solid #787878;
     border-radius: 0;
     padding: 0;
@@ -617,7 +684,7 @@ body {
   #main #showcase #showcaseCarousel .carousel-inner .carousel-item-first .carousel-caption-first {
     margin-bottom: 0; }
     #main #showcase #showcaseCarousel .carousel-inner .carousel-item-first .carousel-caption-first .slider-header {
-      font-size: 1em; }
+      font-size: .6em; }
     #main #showcase #showcaseCarousel .carousel-inner .carousel-item-first .carousel-caption-first .slider-text {
       display: none; }
     #main #showcase #showcaseCarousel .carousel-inner .carousel-item-first .carousel-caption-first .pass-link {
@@ -626,7 +693,7 @@ body {
   #main #showcase #showcaseCarousel .carousel-inner .carousel-item-second .carousel-caption-second {
     margin-bottom: 0; }
     #main #showcase #showcaseCarousel .carousel-inner .carousel-item-second .carousel-caption-second .slider-header {
-      font-size: 1em; }
+      font-size: .6em; }
     #main #showcase #showcaseCarousel .carousel-inner .carousel-item-second .carousel-caption-second .slider-text {
       display: none; }
     #main #showcase #showcaseCarousel .carousel-inner .carousel-item-second .carousel-caption-second .pass-link {
@@ -635,7 +702,7 @@ body {
   #main #showcase #showcaseCarousel .carousel-inner .carousel-item-third .carousel-caption-third {
     margin-bottom: 0; }
     #main #showcase #showcaseCarousel .carousel-inner .carousel-item-third .carousel-caption-third .slider-header {
-      font-size: 1em; }
+      font-size: .6em; }
     #main #showcase #showcaseCarousel .carousel-inner .carousel-item-third .carousel-caption-third .slider-text {
       display: none; }
     #main #showcase #showcaseCarousel .carousel-inner .carousel-item-third .carousel-caption-third .pass-link {
@@ -662,11 +729,14 @@ body {
     #main #posts .posts-container .post-card .post-content {
       padding: 2em; }
   #main #subscribe .subscription-form .pass-link {
+    margin-top: 1em; }
+
+  #footer #footer-items .footer-heading {
     margin-top: 1em; } }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 768px) {
   #header .language-currency .dropdown .dropdown-menu {
     position: relative;
-    transform: translate3d(-11em, 1.4em, 0px);
+    transform: translate3d(-12em, 1.4em, 0px);
     border: 1px solid #787878;
     border-radius: 0;
     padding: 0;
@@ -739,7 +809,7 @@ body {
     margin-bottom: 1em; }
     #main #posts .posts-container .post-card .post-content {
       padding: 2em; } }
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
   #header .logo-navbar .navbar-container .main-nav-container {
     flex-direction: column;
     text-align: center; }
