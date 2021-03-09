@@ -637,25 +637,25 @@ body {
   #login-main .login .login-section .login-content .login-form-container .forgot {
     color: #787878;
     font-size: .8em; }
-  #login-main .login .login-section .login-content .signup-form-container {
+  #login-main .login .login-section .login-content .signup-form-wrapper {
     background-color: #FAFAFA;
-    padding: 2.1em; }
-    #login-main .login .login-section .login-content .signup-form-container .signupHeading {
+    padding: 2em; }
+    #login-main .login .login-section .login-content .signup-form-wrapper .signupHeading {
       font-size: 1.1em;
       margin-bottom: 1.5em; }
-    #login-main .login .login-section .login-content .signup-form-container small {
+    #login-main .login .login-section .login-content .signup-form-wrapper small {
       color: #787878;
       margin-bottom: 2em; }
-    #login-main .login .login-section .login-content .signup-form-container #signup-form label, #login-main .login .login-section .login-content .signup-form-container #signup-form input:not(:last-child) {
+    #login-main .login .login-section .login-content .signup-form-wrapper #signup-form label, #login-main .login .login-section .login-content .signup-form-wrapper #signup-form input:not(:last-child) {
       display: block; }
-    #login-main .login .login-section .login-content .signup-form-container #signup-form label {
+    #login-main .login .login-section .login-content .signup-form-wrapper #signup-form label {
       font-size: .8em; }
-    #login-main .login .login-section .login-content .signup-form-container #signup-form input:not(:last-child) {
+    #login-main .login .login-section .login-content .signup-form-wrapper #signup-form input:not(:last-child) {
       padding: .8em;
       border: 1px solid #c5c5cf;
       width: 100%;
       margin-bottom: 1.5em; }
-    #login-main .login .login-section .login-content .signup-form-container #signup-form .pass-link {
+    #login-main .login .login-section .login-content .signup-form-wrapper #signup-form .pass-link {
       display: inline-block;
       padding: 1.2em 2.1em;
       color: #FFF;
@@ -666,7 +666,7 @@ body {
       font-size: 0.9em;
       transition: all .3s linear;
       margin-top: 2em; }
-      #login-main .login .login-section .login-content .signup-form-container #signup-form .pass-link:hover {
+      #login-main .login .login-section .login-content .signup-form-wrapper #signup-form .pass-link:hover {
         background-color: #117b77; }
 
 #faq-main {
