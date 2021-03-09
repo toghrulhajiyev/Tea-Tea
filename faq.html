@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea&Tea | Login</title>
+    <title>Tea&Tea | FAQ</title>
     <!-- Animate Style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Bootstrap -->
@@ -189,82 +189,244 @@
     <!-- Header Ends -->
 
     <!-- Main Starts -->
-    <main id="login-main">
-        <!-- Login -->
-        <section class="login">
-            <div class="container">
-                <!-- Breadcrumb -->
-                <ul class="breadcrumb-section">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Account</a>
-                    </li>
-                </ul>
-                <!-- Login Section -->
-                <section class="login-section">
-                    <div class="container">
-                        <div class="login-header">
-                            <h1 class="title">My Account</h1>
-                        </div>
+    <main id="faq-main">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <ul class="breadcrumb-section">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    Theme FAQs
+                </li>
+            </ul>
+            <!-- FAQ container -->
+            <div class="faq-container">
+                <div class="container">
 
-                        <div class="login-content">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="login-form-container">
-                                        <h3 class="loginHeading">Returning Customer</h3>
-                                        <small>I am a returning customer</small>
+                    <!-- FAQ Header -->
+                    <div class="faq-header">
+                        <h3 class="title">Theme FAQs</h3>
+                        <p class="content">Below FAQ are some common concerns of our clients before purchasing the theme, if you have other questions, please just send it to <a href="#" class="text-primary">support@halothemes.com</a></p>
+                    </div>
 
-                                        <form class="login-form">
-                                            <label for="mail">Email Address *</label>
-                                            <input type="email" id="login-mail">
-                                            <div class="invalid-feedback"></div>
+                    <!-- FAQ Content -->
+                    <div class="faq-content">
+                        <div class="row">
 
-                                            <label for="name">Password*</label>
-                                            <input type="password" class="password">
-                                            <div class="invalid-feedback"></div>
-
-                                            <input type="submit" value="LOGIN" class="pass-link" id="logInBtn">
-                                        </form>
-
-                                        <p class="forgot">
-                                            <a href="#">Forgot Password</a> or <a href="index.html">Return to Store</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="signup-form-container">
-                                        <h3 class="signupHeading">New Customer</h3>
-                                        <small class="d-block">Register Account</small>
-                                        <small class="d-block">By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</small>
-                                        <form id="signup-form">
-                                            <label for="name"> First Name</label>
-                                            <input type="text" id="firstname">
-                                            <div class="invalid-feedback"></div>
-    
-                                            <label for="lastname">Last Name</label>
-                                            <input type="text" id="lastname">
-                                            <div class="invalid-feedback"></div>
-    
-                                            <label for="mail">Email *</label>
-                                            <input type="email" id="signup-mail">
-                                            <div class="invalid-feedback"></div>
-
-                                            <label for="password">Password *</label>
-                                            <input type="password" name="password" id="password">
-                                            <div class="invalid-feedback"></div>
-    
-                                            <input type="submit" value="Create Account" class="pass-link" id="submitBtn">
-                                        </form>
+                            <div class="col-lg-3 ">
+                                <!-- Help Section -->
+                                <div class="help">
+                                    <h3 class="help-title">Need Help?</h3>
+                                    <div class="help-content">
+                                        <div class="contact-us">
+                                            <i class="fab fa-facebook-messenger"></i>
+                                            <a href="#"> Message Us</a>
+                                        </div>
+                                        <div class="contact-us">
+                                            <i class="fas fa-envelope"></i>
+                                            <a href="#"> Contact Us</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="col-lg-9 lg">
+                                <!-- Pre Sales -->
+                                <div class="pre-sales">
+                                    <h3 class="faq-title">Pre sales questions</h3>
+
+                                    <div class="accordion-question">
+                                        <a href="#" class="accordion-btn">
+                                            Will Your template be fully compatible with Shopify?
+                                            <span class="plus-icon"></span>
+                                        </a>
+                                        <div class="answer">
+                                            <p>Yes it is.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-question">
+                                        <a href="#" class="accordion-btn">
+                                            Do you offer free trials?
+                                            <span class="plus-icon"></span>
+                                        </a>
+                                        <div class="answer">
+                                            <p>No we don't</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Theme questions -->
+                                <div class="theme-questions">
+                                    <h3 class="faq-title">Theme Questions</h3>
+
+                                    <div class="accordion-question">
+                                        <a href="#" class="accordion-btn">
+                                            I cannot upload the theme to my Shopify store alerts that the file is too big to upload, what is the problem?
+                                            <span class="plus-icon"></span>
+                                        </a>
+                                        <div class="answer">
+                                            <p class="mb-5">Please make sure that you follow below steps:</p>
+                                            <p>1/ Download the package from themeforest.net (the file is in zip format)</p>
+
+                                            <p>2/ Extract the file you've just downloaded.</p>
+
+                                            <p>3/ Find this file: tea-and-coffee-1.0.0-sections-ready.zip in the folder Tea And Coffee Sections Ready 1.0.0, then you just need to upload tea-and-coffee-1.0.0-sections-ready.zip file to your Shopify store.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-question">
+                                        <a href="#" class="accordion-btn">
+                                            What I have to do when I need your support?
+                                            <span class="plus-icon"></span>
+                                        </a>
+                                        <div class="answer">
+                                            <p class="mb-5">To save your time and reach our support quickly, please follow below steps:</p>
+
+                                            <p class="mb-5">1/ Create a staff account for us (with Themes permission and Settings permission) </p>
+
+                                            <p class="mb-5">2/ Capture screenshot or video for the issue you get.</p>
+
+                                            <p class="mb-5">3/ Specify which template and version you are using.
+                                            </p>
+
+                                            <p class="mb-5">4/ Describe clearly how to reproduce the issue.</p>
+
+                                            <p class="mb-5">5/ Send all information (staff account, screenshot, video, template name and version, description of the issues, link) to <a href="#" class="text-primary">support@halothemes.com</a></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-question">
+                                        <a href="#" class="accordion-btn">
+                                            Would assistance be available to upload the template if needed?
+                                            <span class="plus-icon"></span>
+                                        </a>
+                                        <div class="answer">
+                                            <p>Yes, we will assist you to install the template if needed</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-question">
+                                        <a href="#" class="accordion-btn">
+                                            Do you guys offer customisation services for your themes?
+                                            <span class="plus-icon"></span>
+                                        </a>
+                                        <div class="answer">
+                                            <p>Yes, we do. Please send your customisation requests to 
+                                            <a href="#" class="text-primary">
+                                                support@halothemes.com
+                                            </a>, we will give you our quote. Thank you.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-question">
+                                        <a href="#" class="accordion-btn">
+                                        Can I turn on/off Lazy Loading Image / Item Animation / Fade Up on the page?
+                                            <span class="plus-icon"></span>
+                                        </a>
+                                        <div class="answer">
+                                            <p>Yes. You can turn on/off the animation in the Setting page.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-question">
+                                        <a href="#" class="accordion-btn">
+                                            Can I turn on/off some blocks on the page?
+                                            <span class="plus-icon"></span>
+                                        </a>
+                                        <div class="answer">
+                                            <p>Yes. You can turn on/off almost any blocks on the page (featured products, slideshow, banners, related products, recent products,...).</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-question">
+                                        <a href="#" class="accordion-btn">
+                                            I want to have the dropdown cart displayed automatically every time clients hover over it (instead of clicking on it). Is it possible?
+                                            <span class="plus-icon"></span>
+                                        </a>
+                                        <div class="answer">
+                                            <p>Yes, we have a setting for you to switch between these two options: Display on Hover and Display on Click.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-question">
+                                        <a href="#" class="accordion-btn">
+                                            What is included in the theme package?
+                                            <span class="plus-icon"></span>
+                                        </a>
+                                        <div class="answer">
+                                            <p>The theme package includes theme source, Photoshop design files, sample data and manual guide.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-question">
+                                        <a href="#" class="accordion-btn">
+                                            I notice that the images used in the theme are all portrait. Will that be a problem if I use square images for our products? How will they be displayed in the theme?
+                                            <span class="plus-icon"></span>
+                                        </a>
+                                        <div class="answer">
+                                            <p>That is not a problem. You just need to modify the width/height ratio in theme settings.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-question">
+                                        <a href="#" class="accordion-btn">
+                                            Does the theme support image resizing and cropping?
+                                            <span class="plus-icon"></span>
+                                        </a>
+                                        <div class="answer">
+                                            <p>Yes. Normally, the theme will resize images to a default size (based on your width/height ratio setting). We also have Crop setting if you don’t want to scale the image.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-question">
+                                        <a href="#" class="accordion-btn">
+                                            Can I add borders around out product images?
+                                            <span class="plus-icon"></span>
+                                        </a>
+                                        <div class="answer">
+                                            <p>Yes, you can. You can also set image border colours.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-question">
+                                        <a href="#" class="accordion-btn">
+                                            Can I have multi level menu?
+                                            <span class="plus-icon"></span>
+                                        </a>
+                                        <div class="answer">
+                                            <p>Yes, you can. Just simply follow the instructions in our Manual Guide, you will be able to easily create a multi-level menu.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-question">
+                                        <a href="#" class="accordion-btn">
+                                           Do you guys provide customer support during weekends/holidays?
+                                            <span class="plus-icon"></span>
+                                        </a>
+                                        <div class="answer">
+                                            <p>Normally we don't provide support during weekends, except for urgent cases. In these cases, you only need to mark “Urgent” in your email, we will get back to you ASAP.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-question">
+                                        <a href="#" class="accordion-btn">
+                                           Does the theme support Variant Image?
+                                            <span class="plus-icon"></span>
+                                        </a>
+                                        <div class="answer">
+                                            <p>Yes, it does. Please check it out here to see how it works: <a href="#" class="text-primary">https://teaandcoffee-theme.myshopify.com/collections/all-tea/products/dinterdum-pretium-condimento</a></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
     <!-- Main Ends -->
 
@@ -348,7 +510,7 @@
                                 <a href="#" class="footer-list-link">Privacy Policy</a>
                             </li>
                             <li class="footer-list-item">
-                                <a href="faq.html" class="footer-list-link">FAQs</a>
+                                <a href="#" class="footer-list-link">FAQs</a>
                             </li>
                         </ul>
                     </div>
@@ -424,7 +586,7 @@
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous"></script>
     <!-- My Script -->
-    <script src="js/login.js"></script>
+    <script src="js/faq.js"></script>
 </body>
 
 </html>

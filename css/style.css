@@ -671,6 +671,70 @@ body {
       #login-main .login .login-section .login-content .signup-form-container #signup-form .pass-link:hover {
         background-color: #117b77; }
 
+#faq-main {
+  padding: 3em 0 7em 0; }
+  #faq-main .faq-container .faq-header .content {
+    font-size: .8em;
+    color: #787878;
+    margin-top: 1.4em; }
+  #faq-main .faq-container .faq-content .help {
+    position: sticky;
+    top: 1%;
+    background-color: #FAFAFA;
+    padding: 1.6em 1.8em 2em; }
+    #faq-main .faq-container .faq-content .help .help-title {
+      text-align: center;
+      border-bottom: 2px solid #1E1E1E;
+      padding-bottom: .6em;
+      margin-bottom: 1.5em;
+      font-size: 1.1em; }
+    #faq-main .faq-container .faq-content .help .help-content {
+      display: flex;
+      justify-content: space-around;
+      text-align: center; }
+      #faq-main .faq-container .faq-content .help .help-content .contact-us {
+        display: flex;
+        flex-direction: column; }
+        #faq-main .faq-container .faq-content .help .help-content .contact-us i {
+          font-size: 1.7em; }
+        #faq-main .faq-container .faq-content .help .help-content .contact-us a {
+          font-size: .7em;
+          text-decoration: underline; }
+  #faq-main .faq-container .faq-content .pre-sales {
+    padding-bottom: 1.5em; }
+  #faq-main .faq-container .faq-content .accordion-question {
+    border-bottom: 1px solid #909195;
+    font-size: .9em; }
+    #faq-main .faq-container .faq-content .accordion-question .accordion-btn {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5em 0; }
+      #faq-main .faq-container .faq-content .accordion-question .accordion-btn .plus-icon {
+        position: relative;
+        display: inline-block;
+        width: 1px;
+        height: 15px;
+        background-color: #787878;
+        vertical-align: middle;
+        margin-left: .6em;
+        transition: all .2s linear; }
+        #faq-main .faq-container .faq-content .accordion-question .accordion-btn .plus-icon:after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #787878;
+          transform: rotate(90deg); }
+    #faq-main .faq-container .faq-content .accordion-question .answer {
+      color: #787878;
+      height: 0;
+      visibility: hidden;
+      opacity: 0;
+      transition: all .3s ease-in-out; }
+
 #footer #footer-items {
   background-color: #F7F9F9;
   padding: 3em 0; }
@@ -738,8 +802,8 @@ body {
       justify-content: space-between;
       width: 100%; }
       #header .logo-navbar .navbar-container .main-nav-container .logo-container img {
-        width: 200px;
-        height: 100%; }
+        width: 190px;
+        height: 50px; }
       #header .logo-navbar .navbar-container .main-nav-container .logo-container .hamburger {
         display: block;
         margin-left: auto; }
@@ -823,8 +887,8 @@ body {
       justify-content: space-between;
       width: 100%; }
       #header .logo-navbar .navbar-container .main-nav-container .logo-container img {
-        width: 200px;
-        height: 100%; }
+        width: 190px;
+        height: 50px; }
       #header .logo-navbar .navbar-container .main-nav-container .logo-container .hamburger {
         display: block;
         margin-left: auto; }
@@ -892,16 +956,16 @@ body {
       justify-content: space-between;
       width: 100%; }
       #header .logo-navbar .navbar-container .main-nav-container .logo-container img {
-        width: 200px;
-        height: 100%; }
+        width: 190px;
+        height: 50px; }
       #header .logo-navbar .navbar-container .main-nav-container .logo-container .hamburger {
         display: block;
         margin-left: auto; }
     #header .logo-navbar .navbar-container .main-nav-container .main-nav {
       display: block;
       flex-direction: column;
-      opacity: 0;
-      height: 0; }
+      height: 0;
+      opacity: 0; }
       #header .logo-navbar .navbar-container .main-nav-container .main-nav .main-nav-item {
         padding-bottom: 1em; }
   #header .logo-navbar .navbar-container .right-menu-container .icon-container {

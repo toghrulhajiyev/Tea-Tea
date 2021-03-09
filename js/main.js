@@ -59,26 +59,28 @@ $('.products-container').slick({
     ]
   });
 
-  // Hamburger Menu
-  const hamburgerMenu = document.querySelector('.hamburger');
-  const mainNav = document.querySelector('.main-nav');
-
-  hamburgerMenu.addEventListener('click', () => {
-
-    if(!mainNav.classList.contains('active')) {
-      mainNav.classList.add('active');
-      mainNav.style.cssText = `
-        height: 100%;
-        opacity: 1;
-        transition: all .4s linear;
-      `;
-    } else {
-      mainNav.classList.remove('active');
-      mainNav.style.cssText = `
-        height: 0;
-        opacity: 0;
-        transition: all .4s linear;
-      `;
-    }
-  });
+    // Hamburger Menu
+    const hamburgerMenu = document.querySelector('.hamburger');
+    const mainNav = document.querySelector('.main-nav');
+  
+    hamburgerMenu.addEventListener('click', () => {
+  
+      if(!mainNav.classList.contains('active')) {
+        mainNav.classList.add('active');
+        mainNav.style.cssText = `
+          height: 100%;
+          opacity: 1;
+          padding: 30px 0;
+          transition: all .4s linear;
+  
+        `;
+      } else {
+        mainNav.classList.remove('active');
+        mainNav.style.cssText = `
+          opacity: 0;
+          padding: 0;
+          transition: all .4s linear;
+        `;
+      }
+    });
 });
