@@ -602,46 +602,43 @@ body {
   padding: 3em 0; }
   #login-main .login .login-section .login-header {
     margin-bottom: 5em; }
-  #login-main .login .login-section .login-content .login-form-container {
-    padding: 4em; }
-    #login-main .login .login-section .login-content .login-form-container .loginHeading {
-      font-size: 1.1em;
-      margin-bottom: 1.5em; }
-    #login-main .login .login-section .login-content .login-form-container small {
-      display: inline-block;
-      color: #787878;
-      margin-bottom: 2em; }
-    #login-main .login .login-section .login-content .login-form-container .login-form label, #login-main .login .login-section .login-content .login-form-container .login-form input {
-      display: block; }
-    #login-main .login .login-section .login-content .login-form-container .login-form label {
-      font-size: .8em; }
-    #login-main .login .login-section .login-content .login-form-container .login-form input:not(:last-child) {
-      padding: .8em;
-      border: 0;
-      border: 1px solid #c5c5cf;
-      width: 100%;
-      margin-bottom: 1em; }
-      #login-main .login .login-section .login-content .login-form-container .login-form input:not(:last-child):focus {
-        outline-width: 0; }
-    #login-main .login .login-section .login-content .login-form-container .login-form .pass-link {
-      display: inline-block;
-      padding: 1.2em 2.1em;
-      color: #FFF;
-      background-color: #1DBDB8;
-      border: 1px solid #1DBDB8;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 0.9em;
-      transition: all .3s linear;
-      margin-bottom: 1.4em; }
-      #login-main .login .login-section .login-content .login-form-container .login-form .pass-link:hover {
-        background-color: #117b77; }
-    #login-main .login .login-section .login-content .login-form-container .forgot {
-      color: #787878;
-      font-size: .8em; }
+  #login-main .login .login-section .login-content .login-form-container .loginHeading {
+    font-size: 1.1em;
+    margin-bottom: 1.5em; }
+  #login-main .login .login-section .login-content .login-form-container small {
+    display: inline-block;
+    color: #787878;
+    margin-bottom: 2em; }
+  #login-main .login .login-section .login-content .login-form-container .login-form label, #login-main .login .login-section .login-content .login-form-container .login-form input {
+    display: block; }
+  #login-main .login .login-section .login-content .login-form-container .login-form label {
+    font-size: .8em; }
+  #login-main .login .login-section .login-content .login-form-container .login-form input:not(:last-child) {
+    padding: .8em;
+    border: 0;
+    border: 1px solid #c5c5cf;
+    width: 100%;
+    margin-bottom: 1em; }
+    #login-main .login .login-section .login-content .login-form-container .login-form input:not(:last-child):focus {
+      outline-width: 0; }
+  #login-main .login .login-section .login-content .login-form-container .login-form .pass-link {
+    display: inline-block;
+    padding: 1.2em 2.1em;
+    color: #FFF;
+    background-color: #1DBDB8;
+    border: 1px solid #1DBDB8;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: all .3s linear;
+    margin-bottom: 1.4em; }
+    #login-main .login .login-section .login-content .login-form-container .login-form .pass-link:hover {
+      background-color: #117b77; }
+  #login-main .login .login-section .login-content .login-form-container .forgot {
+    color: #787878;
+    font-size: .8em; }
   #login-main .login .login-section .login-content .signup-form-container {
-    background-color: #FAFAFA;
-    padding: 4em; }
+    background-color: #FAFAFA; }
     #login-main .login .login-section .login-content .signup-form-container .signupHeading {
       font-size: 1.1em;
       margin-bottom: 1.5em; }
