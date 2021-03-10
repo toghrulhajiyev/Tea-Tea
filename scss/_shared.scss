@@ -37,7 +37,7 @@ ul {
         font-size: .8em;
         color: $grey-color;
 
-        &:first-child::after {
+        &:not(:last-child)::after {
             content: ">";
         }
 

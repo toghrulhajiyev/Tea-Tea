@@ -1311,6 +1311,213 @@ body {
     }
 }
 
+// Details Page
+#details-main {
+    padding: 2em 0;
+    
+    // Details
+    .details {
+        padding: 3em 0;
+
+        .product-img {
+           width: 100%;
+           overflow: hidden;
+
+           img {
+               width: 100%;
+               height: 100%;
+           }
+        }
+
+        .cms-block-container {
+            text-align: center;
+            padding-top: 1.5em;
+
+            .title {
+                font-size: 1em;
+            }
+
+            .text {
+                font-size: .7em;
+                color: $grey-color;
+                line-height: 2;
+            }
+        }
+
+        .product-details {
+
+            .detail-heading {
+
+                .product-header {
+                    font-size: 1.4em;
+                }
+            }
+
+            .product-review {
+                margin-bottom: 1.5em;
+                font-size: .8em;
+
+                .review-stars {
+                    
+                    i {
+                        color: $star-color;
+                    }
+
+                    .review {
+                        margin-left: .5em;
+                        color: $grey-color;
+                    }
+                }
+
+                .sold-products {
+                    margin-left: .7em;
+                    color: $red-color;
+                }
+            }
+
+            .product-meta {
+                font-size: .8em;
+
+                .meta {
+                    
+                    label {
+                        color: $dark-color;
+                        width: 20%;
+                    }
+
+                    a, span {
+                        color: $grey-color;
+                        
+                    }
+                }
+            }
+
+            .price-tag {
+                font-size: 1.125em;
+                margin-bottom: 1.125em;
+            }
+
+            .product-description {
+                margin-bottom: 1.625em;
+
+                .description {
+                    font-size: .8em;
+                    color: $grey-color;
+                }
+            }
+
+            .selector-wrapper {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1.25em;
+                font-size: .8em;
+
+                .size-wrapper {
+
+                    .size {
+                        
+                        span {
+                            color: $grey-color;
+                        }
+                    }
+
+                    .size-button {
+                        border: 1px solid $dark-color;
+                        border-radius: 6px;
+                        text-align: center;
+                        padding: .3em .875em;
+                        margin-top: 1.1em;
+                    }
+                }
+
+                .tea-guide {
+
+                    .guide {
+                        color: $grey-color;
+                        transition: all .3s linear;
+
+                        &:hover {
+                            color: $main-color;
+                        }
+                    }
+                    
+                }
+            }
+
+            .quantity {
+                font-size: .8em;
+                color: $grey-color;
+
+                .quantity-label {
+                    display: block;
+                }
+
+                #quantity-input {
+                    border: 1px solid #c5c5cf;
+                    padding: .6em;
+
+                    &:focus {
+                        outline-width: 0;
+                    }
+                }
+            }
+
+            .buttons {
+
+                .pass-link {
+                    @include passLink($white-color, $main-color, $main-color);
+                    width: 100%;
+                }
+
+                .add-cart {
+                    text-align: center;
+
+                    &:hover {
+                        background-color: #117b77;
+                    }
+                }
+
+                .add-wishlist {
+                    background-color: $white-color;
+                    color: $dark-color;
+                    border-color: $dark-color;
+                    text-align: center;
+
+                    &:hover {
+                        color: $white-color;
+                        background-color: $main-color;
+                        border-color: $main-color;
+                    }
+                }
+
+                .buy-now {
+                    background-color: $white-color;
+                    color: $main-color;
+                    margin-top: 2em;
+                    text-align: center;
+
+                    &:hover {
+                        color: $white-color;
+                        background-color: $gold-color;
+                        border-color: $gold-color;
+                    }
+                }
+
+                .terms {
+                    display: inline-block;
+                    margin: .625em 0;
+                    text-align: left;
+                    color: $grey-color;
+                    font-size: .8em;
+                }
+            }
+
+            .payment-security {
+                margin-top: 1.375em;
+            }
+        }
+    }
+}
 
 // Footer
 #footer {
