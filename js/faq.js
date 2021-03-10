@@ -49,7 +49,5 @@ accordionBtns.forEach(function(accordionBtn) {
         `;
         accordionBtn.lastElementChild.style.transform = `rotate(0)`;
         }
-
-        console.log(accordionBtn.lastElementChild);
     })
 });

@@ -964,7 +964,12 @@ body {
 
             // Pre Sales and Theme Questions
             .pre-sales {
-                padding-bottom: 1.5em;
+                padding: 1.5em 0;
+            }
+
+            .faq-title {
+                border-bottom: 2px solid $dark-color;
+                padding-bottom: .8em;
             }
            
             .accordion-question {
@@ -1010,6 +1015,298 @@ body {
                 }
             }
 
+        }
+    }
+}
+
+// Blogs Page
+#blog-main {
+    padding: 2em 0;
+
+    #blogs {
+        padding: 2em 0;
+
+        .blog-content {
+            padding: 2em 0;
+            
+            .settings {
+
+                .search {
+
+                    .search-input {
+                        position: relative;
+
+                        input {
+                            border: 1px solid #c5c5cf;
+                            padding: .6em;
+                            font-size: .8em;
+                            width: 100%;
+
+                            &:focus {
+                                outline-width: 0;
+                            }
+                        }
+
+                        .search-icon {
+                            position: absolute;
+                            background-color: transparent;
+                            font-size: 1.3em;
+                            border: 0;
+                            top: 3px;
+                            right: 4px;
+                        }
+                    }
+                }
+
+                .categories {
+
+                    .category {
+
+                        a {
+                            font-size: .7em;
+                            color: $grey-color;
+                            line-height: 1.8;
+                        }
+                    }
+                }
+
+                .recent-posts {
+
+                    .recent-post {
+                        display: flex;
+                        padding-top: 1.6em;
+
+                        .post-img {
+                            width: 95px;
+                            height: 75px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 10px;
+                            }
+                        }
+
+                        .post-content {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            padding-left: .8em;
+
+                            a, .date {
+                                font-size: .7em;
+                            }
+
+                            .date {
+                                color: $grey-color;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+
+                .best-sellers {
+                    
+                    .best-seller {
+                        display: flex;
+                        padding-top: 1.6em;
+
+                        .best-seller-content {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            padding-left: .8em;
+
+                            a {
+                                font-size: .7em;
+                                padding-bottom: .8em;
+                            }
+
+                            .price {
+                                color: $grey-color;
+                                font-size: .7em;
+                                padding-bottom: .8em;
+
+                                .old-price {
+                                    text-decoration: line-through;
+                                }
+
+                                .new-price {
+                                    color: $red-color;
+                                }
+                            }
+
+                            .colors {
+                                display: flex;
+                                padding-bottom: .8em;
+
+                                .color-container {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 22px;
+                                    height: 22px;
+                                    border: 1px solid #777;
+                                    border-radius: 50%;
+                                    margin-right: .4em;
+                                    text-align: center;
+
+                                    .color {
+                                        display: inline-block;
+                                        width: 19px;
+                                        height: 19px;
+                                        padding: .1em;
+                                        border: 1px solid #fff;
+                                        border-radius: 50%;
+                                    }
+
+                                    .dark {
+                                        background-color: #808080;
+                                    }
+    
+                                    .red {
+                                        background-color: #F08080;
+                                    }
+    
+                                    .beige {
+                                        background-color: #F5F5DC;
+                                    }
+    
+                                    .white {
+                                        background-color: #fff;
+                                    }
+                                }
+                                
+                            }
+
+                            .details {
+                                color: $main-color;
+                            }
+                        }
+                    }
+                }
+
+                .banner {
+
+                    a {
+                        
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .cms-block {
+
+                    .cms-block-content {
+                        p {
+                            font-size: .8em;
+                            color: $grey-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Blogs Container
+        .blogs-container {
+
+            .blog {
+
+                .blog-img {
+                    position: relative;
+                    width: 100%;
+
+                    .img {
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background-color: rgba(0, 0, 0, .3);
+                            opacity: 0;
+                            transition: all .4s linear;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    &:hover .img::after {
+                        opacity: 1;
+                    }
+                }
+
+                .blog-content {
+                    padding: 1.8em 0;
+
+                    .meta-container {
+                        margin-bottom: .7em; 
+
+                        .meta-info {
+                            color: #a0a0a0;
+                            font-size: .7em;
+                        }
+                    }
+
+                    .blog-heading {
+
+                        .blog-header {
+                            font-size: 1.5em;
+                            font-weight: bold;
+                            transition: all .3s linear;
+
+                            &:hover {
+                                color: $main-color;
+                            }
+                        }
+                    }
+
+                    .blog-paragraph {
+                        padding-top: 1.25em;
+
+                        .article {
+                            color: $grey-color;
+                            font-size: .8em;
+
+                            a {
+                                color: $main-color;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .third-blog {
+                display: none;
+            }
+
+            // Pagination
+            .pagination-container {
+
+                .pagination {
+
+                    .page-item {
+                        padding: .6em;
+
+                        .page-link {
+                            border-radius: 0;
+                            background-color: transparent;
+                            color: $dark-color;
+
+                            &:hover {
+                                background-color: $main-color;
+                                color: $white-color;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -1360,7 +1657,7 @@ body {
 }
 
 // Medium Screens
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 991px) {
     // Header
     #header {
 
@@ -1572,7 +1869,7 @@ body {
 } 
 
 // Large Screen
-@media only screen and (min-width: 992px) and (max-width: 1024px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
     // Header
     #header {
 
