@@ -37,7 +37,7 @@ productImg.addEventListener('mousemove', function(e) {
     clientX = clientX / imgWidth * 100;
     clientY = clientY / imgHeight * 100;
 
-    img.style.transform = `translate(-${clientX}%, -${clientY}%) scale(2)`;
+    img.style.transform = `translate(-${clientX}%, -${clientY}%) scale(1.5)`;
   
 });
 
@@ -55,10 +55,7 @@ quantityInput.addEventListener('change', function() {
   subTotal.innerText = `Subtotal: $${quantityInput.value * 69}.00`;
 });
 
-
-
 // Disable Buy Now Button
-const form = document.querySelector('#form');
 const checkBox = document.querySelector('#check');
 const buyNow = document.querySelector('.buy-now');
 

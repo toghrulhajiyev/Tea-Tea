@@ -396,6 +396,40 @@ body {
                     width: 300px;
                     height: 100%;
 
+                    &::after {
+                        content: "\2661";
+                        position: absolute;
+                        top: 15px;
+                        right: 15px;
+                        width: 40px;
+                        height: 40px;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 40px;
+                        font-size: 1.8em;
+                        cursor: pointer;
+                        transition: all .3s linear;
+                    }
+
+                    &::before {
+                        content: "\1F441";
+                        position: absolute;
+                        top: 65px;
+                        right: 15px;
+                        width: 40px;
+                        height: 40px;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 40px;
+                        font-size: 1.5em;
+                        cursor: pointer;
+                        z-index: 1;
+                        opacity: 0;
+                        transition: all .3s linear;
+                    }
+
                     .main-img {
                         width: 100%;
                         height: 100%;
@@ -411,6 +445,30 @@ body {
                     }
                 }
 
+                .product-badges {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 20px;
+                    left: 25px;
+
+                    .badge {
+                        color: #fff;
+                        padding: .2em .3em; 
+                        border-radius: 0;
+                        margin-bottom: .3em;
+                        font-weight: normal;
+                    }
+
+                    .sale-badge {
+                        background-color: $red-color;
+                    }
+
+                    .bundle-badge {
+                        background-color: #0D2D4D;
+                    }
+                }
+
                 .product-content {
                     margin-top: 1em;
 
@@ -418,25 +476,12 @@ body {
                         color: $dark-color;
                         font-size: 0.8em;
                     }
-
-                    .price-stars {
-                        padding-top: 1em;
-
-                        .product-stars {
-                            opacity: 0;
-                            transition: all .3s linear;
-
-                            i {
-                                color: $star-color;
-                            }
-                        }
-                    }
                 }
 
                 .layer {
                     position: absolute;
                     left: 3.5em;
-                    bottom: 7em;
+                    bottom: 9em;
                     opacity: 0;
                     transition: all .3s linear;
 
@@ -447,22 +492,10 @@ body {
                 }
 
                 &:hover .hover-img,
-                &:hover .layer  {
+                &:hover .layer,
+                &:hover .product-img::before  {
                     opacity: 1;
                 }
-
-                &:hover {
-
-                    .product-content {
-
-                        .price-stars {
-
-                            .product-stars {
-                                opacity: 1;
-                            }
-                        }
-                    }
-                } 
             }
         }
     }
@@ -1121,64 +1154,7 @@ body {
                                 font-size: .7em;
                                 padding-bottom: .8em;
                             }
-
-                            .price {
-                                color: $grey-color;
-                                font-size: .7em;
-                                padding-bottom: .8em;
-
-                                .old-price {
-                                    text-decoration: line-through;
-                                }
-
-                                .new-price {
-                                    color: $red-color;
-                                }
-                            }
-
-                            .colors {
-                                display: flex;
-                                padding-bottom: .8em;
-
-                                .color-container {
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    width: 22px;
-                                    height: 22px;
-                                    border: 1px solid #777;
-                                    border-radius: 50%;
-                                    margin-right: .4em;
-                                    text-align: center;
-
-                                    .color {
-                                        display: inline-block;
-                                        width: 19px;
-                                        height: 19px;
-                                        padding: .1em;
-                                        border: 1px solid #fff;
-                                        border-radius: 50%;
-                                    }
-
-                                    .dark {
-                                        background-color: #808080;
-                                    }
-    
-                                    .red {
-                                        background-color: #F08080;
-                                    }
-    
-                                    .beige {
-                                        background-color: #F5F5DC;
-                                    }
-    
-                                    .white {
-                                        background-color: #fff;
-                                    }
-                                }
-                                
-                            }
-
+                            
                             .details {
                                 color: $main-color;
                             }
@@ -1382,7 +1358,7 @@ body {
                     
                     label {
                         color: $dark-color;
-                        width: 20%;
+                        width: 30%;
                     }
 
                     a, span {
@@ -1513,10 +1489,230 @@ body {
             }
 
             .payment-security {
+                width: 100%;
                 margin-top: 1.375em;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
     }
+
+    // Services
+    #services {
+        padding: 3em 0;
+
+        .service {
+            text-align: center;
+
+            .service-img {
+                margin-bottom: 1.875em;
+            }
+
+            .service-heading {
+                margin-bottom: 1.25em;
+
+                .service-title {
+                    font-size: 1.1em;
+                }
+            }
+
+            .service-content {
+                color: $grey-color;
+                font-size: .8em;
+
+                a {
+                    color: $main-color;
+                    text-decoration: underline;
+                }
+            }
+        } 
+    }
+
+    // Banner
+    #banner {
+        background-image: url("../img/Details/banner.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: $white-color;
+        padding: 6em 0;
+
+        .banner-container {
+
+            .banner-content {
+                max-width: 25%;
+
+                .sub-title {
+                    font-size: 0.875em;
+                }
+
+                .banner-title {
+                    font-size: 1.625em;
+                    margin-bottom: 1.875em;
+                }
+
+                .banner-text {
+                    font-size: .8em;
+                    line-height: 2;
+                }
+            }
+        }
+    }
+
+    // Tea Info
+    #tea-info {
+        padding: 2em;
+
+        .info {
+            color: $grey-color;
+            font-size: .8em;
+            line-height: 2;
+        }
+    }
+
+    // Tea Collection
+    #tea-collection {
+
+        .tea {
+            padding-top: 1em;
+
+            .row {
+                align-items: center
+            }
+
+            .tea-img {
+                width: 100%;
+
+                .img-container {
+                    position: relative;
+                    overflow: hidden;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color:rgba(0, 0, 0, .4);
+                        border-radius: 50%;
+                        transform: scale(0);
+                        transition: all .3s linear;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .play-btn {
+                        position: absolute;
+                        top: 45%;
+                        right: 45%;
+                        color: $white-color;
+                        z-index: 1;
+                    }
+                }
+
+                &:hover .img-container::after {
+                    transform: scale(1);
+                }
+            }
+
+            .about-tea {
+
+                .title {
+                    font-size: 1.5em;
+                    margin-bottom: 1.375em;
+                }
+
+                .description-container {
+                    
+                    .description {
+                        font-size: .8em;
+                        color: $grey-color;
+                        line-height: 2;
+                    }
+
+                    .specialities {
+                        margin-left: 1em;
+
+                        .speciality {
+                            color: $grey-color;
+                            list-style-type: disc;
+                            line-height: 2em;
+                            font-size: .8em;
+                        }
+                    }
+                }
+
+                .pass-link {
+                    @include passLink($dark-color, transparent, $grey-color);
+                    margin-top: 2em;
+
+                    &:hover {
+                        color: $white-color;
+                        background-color: $main-color;
+                        border-color: $main-color;
+                    }
+                }
+            }
+
+            #teaTastersCarousel {
+                background-color: #FAFAFA;
+                padding: 3em 4em 6em;
+                
+
+                .carousel-indicators {
+
+                    li {
+                        background-color: #000;
+                    }
+                }
+
+                .carousel-inner {
+
+                    .carousel-item {
+                        text-align: center;
+
+                        .taster {
+                            display: flex;
+                            justify-content: center;
+                            margin-bottom: 2.5em;
+
+                            .taster-info {
+                                margin-left: 1.25em;
+
+                                .name {
+                                    font-size: 1em;
+                                }
+
+                                em {
+                                    font-size: .8em;
+                                    color: $grey-color;
+                                }
+                            }
+
+                        }
+
+                        .title {
+                            font-size: 1.5em;
+                            margin-bottom: 1.375em;
+                        }
+
+                        .description {
+                            color: $grey-color;
+                            font-size: .8em;
+                            line-height: 1.8;
+                        }   
+                    }
+                }
+            }
+        }
+    } 
 }
 
 // Footer
@@ -1851,6 +2047,45 @@ body {
         }
     }
 
+    // Details Page
+    #details-main {
+        .details {
+
+            .product-details {
+                
+                .buttons {
+    
+                    .add-wishlist {
+                        margin-top: 2em;
+                    }
+                }
+            }
+        }
+
+        #banner {
+
+            .banner-container {
+
+                .banner-content {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        // Tea Collection
+        #tea-collection {
+
+            .tea {
+                padding: 1.5em 0;
+
+                .tea-img {
+                    padding: 1.5em 0;
+                }
+            }
+        }
+    }
+
+
     // Footer
     #footer {
 
@@ -2073,6 +2308,20 @@ body {
             }
         }
     }
+
+    // Details Page
+    #details-main {
+
+        #banner {
+
+            .banner-container {
+               
+                .banner-content {
+                    max-width: 50%;
+                }
+            }
+        }
+    }
 } 
 
 // Large Screen
@@ -2264,6 +2513,23 @@ body {
                     .post-content {
                         padding: 2em;
                     }
+                }
+            }
+        }
+    }
+
+    // Details
+    #details-main {
+
+        #banner {
+            
+            .banner-container {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+
+                .banner-content {
+                    width: 50%;
                 }
             }
         }
