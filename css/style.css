@@ -408,7 +408,8 @@ html {
         position: absolute;
         top: 0;
         left: 0;
-        width: 300px;
+        width: 100%;
+        height: 100%;
         opacity: 0;
         transition: all .3s linear; }
     #main #products .products-container .product .product-badges {
@@ -433,9 +434,11 @@ html {
         color: #1E1E1E;
         font-size: 0.8em; }
     #main #products .products-container .product .layer {
+      display: flex;
       position: absolute;
-      left: 3.5em;
       bottom: 9em;
+      left: 15%;
+      text-align: center;
       opacity: 0;
       transition: all .3s linear; }
       #main #products .products-container .product .layer .layer-btn {
@@ -1486,6 +1489,16 @@ html {
       padding: 2em; }
       #main #popular .popular-container .popular-card .popular-content .pass-link {
         font-size: .7em; }
+  #main #products .products-container .product .product-img {
+    width: 450px; }
+    #main #products .products-container .product .product-img a .main-img {
+      width: 100%;
+      height: 100%; }
+    #main #products .products-container .product .product-img a .hover-img {
+      width: 100%;
+      height: 100%; }
+  #main #products .products-container .product .layer {
+    left: 25%; }
   #main #quality {
     flex-direction: column; }
     #main #quality .quality-heading {

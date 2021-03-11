@@ -32,10 +32,11 @@ $('.products-container').slick({
     slidesToScroll: 4,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          margin:20, 
+          slidesToShow: 2,
+          slidesToScroll: 2,
           infinite: false,
           dots: true
         }
