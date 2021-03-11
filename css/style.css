@@ -19,6 +19,25 @@ ul {
   text-align: center;
   margin-bottom: 1.5em; }
 
+#backToTop {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  box-sizing: content-box;
+  background-color: #FFF;
+  color: #1E1E1E;
+  width: 1.875em;
+  height: 1.875em;
+  padding: .3em;
+  border: 1px solid black;
+  border-radius: 50%;
+  transition: all .3s linear;
+  z-index: 3; }
+  #backToTop:hover {
+    color: #FFF;
+    border-color: #1DBDB8;
+    background-color: #1DBDB8; }
+
 .breadcrumb-section {
   margin-bottom: 1em; }
   .breadcrumb-section li {
@@ -83,6 +102,9 @@ ul {
 
 body {
   font-family: 'Poppins', sans-serif; }
+
+html {
+  scroll-behavior: smooth; }
 
 .container {
   max-width: 1440px;
@@ -359,6 +381,7 @@ body {
         text-align: center;
         line-height: 40px;
         font-size: 1.8em;
+        border: 1px solid #c5c5cf;
         cursor: pointer;
         transition: all .3s linear; }
       #main #products .products-container .product .product-img::before {
@@ -373,6 +396,7 @@ body {
         text-align: center;
         line-height: 40px;
         font-size: 1.5em;
+        border: 1px solid #c5c5cf;
         cursor: pointer;
         z-index: 1;
         opacity: 0;

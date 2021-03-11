@@ -84,3 +84,20 @@ $('.products-container').slick({
       }
     });
 });
+
+// Back To Top
+const backToTop = document.querySelector('#backToTop');
+backToTop.style.display = "none";
+
+window.addEventListener('scroll', () => {
+    if(document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+});
+
+backToTop.addEventListener('click', function goToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});

@@ -13,6 +13,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 // Utlity Classes
 .container {
     max-width: 1440px;
@@ -408,6 +412,7 @@ body {
                         text-align: center;
                         line-height: 40px;
                         font-size: 1.8em;
+                        border: 1px solid #c5c5cf;
                         cursor: pointer;
                         transition: all .3s linear;
                     }
@@ -424,6 +429,7 @@ body {
                         text-align: center;
                         line-height: 40px;
                         font-size: 1.5em;
+                        border: 1px solid #c5c5cf;
                         cursor: pointer;
                         z-index: 1;
                         opacity: 0;

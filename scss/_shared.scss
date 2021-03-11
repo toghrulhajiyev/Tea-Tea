@@ -29,6 +29,29 @@ ul {
     margin-bottom: 1.5em;
 }
 
+// Back to Top
+#backToTop {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    box-sizing: content-box;
+    background-color: $white-color;
+    color: $dark-color;
+    width: 1.875em;
+    height: 1.875em;
+    padding: .3em;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: all .3s linear;
+    z-index: 3;
+
+    &:hover {
+        color: $white-color;
+        border-color: $main-color;
+        background-color: $main-color;
+    }
+}
+
 .breadcrumb-section {
     margin-bottom: 1em;
     

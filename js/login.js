@@ -21,6 +21,23 @@
     }
   });
 
+    // Back To Top
+    const backToTop = document.querySelector('#backToTop');
+    backToTop.style.display = "none";
+
+    window.addEventListener('scroll', () => {
+        if(document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+        backToTop.style.display = "block";
+        } else {
+        backToTop.style.display = "none";
+        }
+    });
+
+    backToTop.addEventListener('click', function goToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    });
+
    // Patterns
    const validMailPattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
    const validPasswordPattern = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{10,}$/
