@@ -21,6 +21,26 @@
     }
   });
 
+    // Sticky Navbar
+    const logoNavbar = document.querySelector('.logo-navbar');
+
+    window.addEventListener('scroll', function stickyNavbar() {
+    if(document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+        logoNavbar.style.cssText = `
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 9999;
+        transition: all .5s linear;
+        `;
+    } else {
+        logoNavbar.style.cssText = `
+        position: static;
+        `;
+    }
+    });
+
     // Back To Top
     const backToTop = document.querySelector('#backToTop');
     backToTop.style.display = "none";

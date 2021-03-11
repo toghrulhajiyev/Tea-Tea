@@ -35,20 +35,20 @@ ul {
     right: 5%;
     bottom: 5%;
     box-sizing: content-box;
-    background-color: $white-color;
-    color: $dark-color;
+    background-color: $main-color;
+    color: $white-color;
     width: 1.875em;
     height: 1.875em;
     padding: .3em;
-    border: 1px solid black;
+    border: 1px solid $main-color;
     border-radius: 50%;
     transition: all .3s linear;
     z-index: 3;
 
     &:hover {
-        color: $white-color;
-        border-color: $main-color;
-        background-color: $main-color;
+        color: $dark-color;
+        border-color: $dark-color;
+        background-color: $white-color;
     }
 }
 

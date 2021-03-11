@@ -24,19 +24,19 @@ ul {
   right: 5%;
   bottom: 5%;
   box-sizing: content-box;
-  background-color: #FFF;
-  color: #1E1E1E;
+  background-color: #1DBDB8;
+  color: #FFF;
   width: 1.875em;
   height: 1.875em;
   padding: .3em;
-  border: 1px solid black;
+  border: 1px solid #1DBDB8;
   border-radius: 50%;
   transition: all .3s linear;
   z-index: 3; }
   #backToTop:hover {
-    color: #FFF;
-    border-color: #1DBDB8;
-    background-color: #1DBDB8; }
+    color: #1E1E1E;
+    border-color: #1E1E1E;
+    background-color: #FFF; }
 
 .breadcrumb-section {
   margin-bottom: 1em; }
