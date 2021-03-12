@@ -134,6 +134,21 @@ html {
                             font-weight: bold;
                             margin: 0 1.8em;
                         }
+
+                        .dropdown-menu {
+
+                            .dropdown-item {
+                                font-size: .8em;
+                                color: $grey-color;
+                                transition: all .3s linear;
+
+                                &:hover {
+                                    background-color: transparent;
+                                    color: $main-color;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -1878,7 +1893,23 @@ html {
                         height: 0;
 
                         .main-nav-item {
-                            padding-bottom: 1em;
+                            line-height: 2;
+
+                            .dropdown-menu {
+                                width: 100%;
+
+                                .dropdown-item {
+                                    font-size: 1em;
+                                    color: $grey-color;
+                                    transition: all .3s linear;
+    
+                                    &:hover {
+                                        background-color: transparent;
+                                        color: $main-color;
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -2160,7 +2191,23 @@ html {
                         height: 0;
 
                         .main-nav-item {
-                            padding-bottom: 1em;
+                            line-height: 2;
+
+                            .dropdown-menu {
+                                width: 100%;
+
+                                .dropdown-item {
+                                    font-size: 1em;
+                                    color: $grey-color;
+                                    transition: all .3s linear;
+    
+                                    &:hover {
+                                        background-color: transparent;
+                                        color: $main-color;
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -2366,11 +2413,27 @@ html {
                     .main-nav {
                         display: block;
                         flex-direction: column;
-                        height: 0;
                         opacity: 0;
+                        height: 0;
 
                         .main-nav-item {
-                            padding-bottom: 1em;
+                            line-height: 2;
+
+                            .dropdown-menu {
+                                width: 100%;
+
+                                .dropdown-item {
+                                    font-size: 1em;
+                                    color: $grey-color;
+                                    transition: all .3s linear;
+    
+                                    &:hover {
+                                        background-color: transparent;
+                                        color: $main-color;
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

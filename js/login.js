@@ -1,63 +1,3 @@
-  // Hamburger Menu
-  const hamburgerMenu = document.querySelector('.hamburger');
-  const mainNav = document.querySelector('.main-nav');
-
-  hamburgerMenu.addEventListener('click', () => {
-
-    if(!mainNav.classList.contains('active')) {
-      mainNav.classList.add('active');
-      mainNav.style.cssText = `
-        height: 100%;
-        opacity: 1;
-        transition: all .4s linear;
-      `;
-    } else {
-      mainNav.classList.remove('active');
-      mainNav.style.cssText = `
-        height: 0;
-        opacity: 0;
-        transition: all .4s linear;
-      `;
-    }
-  });
-
-    // Sticky Navbar
-    const logoNavbar = document.querySelector('.logo-navbar');
-
-    window.addEventListener('scroll', function stickyNavbar() {
-    if(document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
-        logoNavbar.style.cssText = `
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: #fff;
-        z-index: 9999;
-        transition: all .5s linear;
-        `;
-    } else {
-        logoNavbar.style.cssText = `
-        position: static;
-        `;
-    }
-    });
-
-    // Back To Top
-    const backToTop = document.querySelector('#backToTop');
-    backToTop.style.display = "none";
-
-    window.addEventListener('scroll', () => {
-        if(document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-        backToTop.style.display = "block";
-        } else {
-        backToTop.style.display = "none";
-        }
-    });
-
-    backToTop.addEventListener('click', function goToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    });
-
    // Patterns
    const validMailPattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
    const validPasswordPattern = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{10,}$/
@@ -158,3 +98,4 @@
     target.nextElementSibling.classList.remove('d-block');
     target.style.borderColor = "";
     }
+    

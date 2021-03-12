@@ -1,3 +1,10 @@
+// Dropdown With Hover
+$(document).ready(function() {
+  $('.main-nav-container .main-nav-item').hover(function() {
+    $(this).find('.dropdown-menu').toggle();
+  });
+});
+
 // Hamburger Menu
 const hamburgerMenu = document.querySelector('.hamburger');
 const mainNav = document.querySelector('.main-nav');
@@ -16,14 +23,13 @@ hamburgerMenu.addEventListener('click', () => {
   } else {
     mainNav.classList.remove('active');
     mainNav.style.cssText = `
-      opacity: 0;
       padding: 0;
       transition: all .4s linear;
     `;
   }
 });
 
-// Sticky Navbar
+// Fixed Navbar
 const logoNavbar = document.querySelector('.logo-navbar');
 
 window.addEventListener('scroll', function stickyNavbar() {

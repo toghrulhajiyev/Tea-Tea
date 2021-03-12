@@ -42,3 +42,4 @@ checkBox.addEventListener('click', function() {
     buyNow.removeAttribute('disabled');
   }
 });
+
