@@ -39,7 +39,7 @@ logoNavbar.style.cssText = `
   top: 0;
   width: 100%;
   background-color: #fff;
-  z-index: 9999;
+  z-index: 10;
   transition: all .5s linear;
 `;
 } else {
